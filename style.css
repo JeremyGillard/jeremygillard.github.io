@@ -1,16 +1,25 @@
-body, html {
-  height: 100%;
+html, body {
+    margin: 0;
+    background-image: url("./media/desk-home-office-indoor.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("./astronomy-constellations-cosmos.jpg");
+h1, h2 {
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(45, 68, 119);
+}
 
-  /* Full height */
-  height: 100%;
+.incipit {
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 50%;
+
+    position: relative;
+    top: 30%;
+    left: 45%;
+
+    text-align: center;
+
 }
