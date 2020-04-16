@@ -1,47 +1,83 @@
 body {
-    background: url("./media/galaxy.jpg") no-repeat center center fixed;
-    padding: 0;
-    margin: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  background-color: #1e2046;
+  background-image: url("./media/images/background_shape.png");
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    background: rgba(4, 4, 12, 0.877);
-    
-    padding: 20px 15px 15px 20px;
-    margin-top: 10em;
-
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.8px;
-    color: rgb(189, 189, 216);
-}
-
-div {
-    padding: 0% 20% 0% 20%;
+  display: flex;
 }
 
 h1 {
-    padding: 0;
-    margin: 0;
-
-    font-size: 2.4em;
+  font-size: 48px;
+  margin: 64px 0px 32px 0px;
+  padding: 0;
 }
 
 h2 {
-    font-size: 1.1em;
+  margin: 0px 0px 32px 0px;
 }
 
 p {
-    font-size: 1em;
+  margin: 0px 0px 24vh 0px;
 }
 
-.keyword {
-    font-weight: bolder;
+a {
+  text-decoration: none;
 }
 
-@media screen and (min-width: 1280px) {
-    body {
-        background: url("./media/galaxy-big.jpg") no-repeat center center fixed;
-        padding: 0;
-        margin: 0;
-    }
+.content {
+  margin: 75px;
+  padding: 16px;
+  width: 1400px;
+  height: 800px;
+}
+
+.intro-card {
+  font-size: 18px;
+  width: 570px;
+  text-align: justify;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  margin: 8px 24px;
+}
+
+.portfolio {
+  display: flex;
+}
+
+.portfolio a {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  background: rgb(99, 112, 252);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 112, 252, 1) 0%,
+    rgba(41, 171, 154, 1) 100%
+  );
+  border-radius: 30px;
+  padding: 10px 16px;
+  min-width: 160px;
+}
+
+.title {
+  width: 800px;
 }
