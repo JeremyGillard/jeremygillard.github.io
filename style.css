@@ -44,6 +44,8 @@ a {
 }
 
 .intro-card {
+  position: relative;
+  right: 1vw;
   font-size: 18px;
   width: 570px;
   text-align: justify;
