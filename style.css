@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 main {
@@ -47,7 +48,7 @@ a {
   position: relative;
   right: 1vw;
   font-size: 18px;
-  width: 570px;
+  width: 31vw;
   text-align: justify;
 }
 
