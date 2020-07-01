@@ -1,0 +1,81 @@
+$colors: (
+  primary: #b2d9d7,
+  secondary: #203557,
+);
+
+$padding: 16px;
+$margin: 16px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$media-limit: 1023px;
+
+@mixin media-limit {
+  @media (max-width: #{$media-limit}) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: color(primary);
+  color: color(secondary);
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin: 120px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 68px;
+
+  @include media-limit {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 16px;
+  line-height: 154%;
+
+  @include media-limit {
+    font-size: 22px;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 148.5%;
+  max-width: 1224px;
+}
+
+li {
+  display: inline-block;
+  font-size: 32px;
+
+  .fab {
+    color: color(secondary);
+  }
+
+  .fab:hover {
+    color: #4e528e;
+  }
+}
+
+li {
+  margin: 16px 16px 16px 0px;
+}
