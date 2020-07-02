@@ -16,6 +16,12 @@ main {
   margin: 120px;
 }
 
+@media (max-width: 500px) {
+  main {
+    margin: 32px;
+  }
+}
+
 h1 {
   font-weight: 800;
   font-size: 68px;
@@ -24,6 +30,12 @@ h1 {
 @media (max-width: 1023px) {
   h1 {
     font-size: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 38px;
   }
 }
 
