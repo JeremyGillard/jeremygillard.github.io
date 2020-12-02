@@ -1,6 +1,6 @@
 $primary-color: #1e2046;
 $second-color: #313575;
-$thirs-color: #6175f9;
+$third-color: #6175f9;
 $fourth-color: #5bd6b8;
 * {
     margin: 0;
@@ -50,12 +50,12 @@ main {
 }
 
 i {
-    background: linear-gradient(-30deg, $fourth-color, $thirs-color);
+    background: linear-gradient(-30deg, $fourth-color, $third-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background 300ms ease-out;
     &:hover {
-        background: $thirs-color;
+        background: $third-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
