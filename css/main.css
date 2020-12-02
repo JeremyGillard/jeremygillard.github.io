@@ -23,4 +23,14 @@ h2 {
 p {
   font-family: 'Open Sans', sans-serif;
 }
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 /*# sourceMappingURL=main.css.map */
