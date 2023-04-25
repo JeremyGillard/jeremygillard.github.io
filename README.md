@@ -1,5 +1,7 @@
 # Nuxt 3 Minimal Starter
 
+[Skills Idea](https://observablehq.com/@d3/disjoint-force-directed-graph)
+
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
