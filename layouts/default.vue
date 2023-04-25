@@ -6,10 +6,10 @@
 
 <style>
 :root {
-  --primary: #1e2046;
-  --second: #313575;
-  --third: #6175f9;
-  --fourth: #5bd6b8;
+  --primary-background: #141e30;
+  --second-background: #243b55;
+  --primary-text: #f8f8f9;
+  --second-text: #86a1c1;
 }
 
 *,
@@ -34,6 +34,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-30deg, var(--second), var(--primary) 60%);
+  background: var(--primary-background);
+  background: -webkit-linear-gradient(
+    to right,
+    var(--second-background),
+    var(--primary-background)
+  );
+  background: linear-gradient(
+    to right,
+    var(--second-background),
+    var(--primary-background)
+  );
 }
 </style>
