@@ -9,3 +9,7 @@ path, projects, skills, notes (blog)
 ## Path
 
 This page will be presented as a timeline (animated downwards using scroll).
+
+## Projects
+
+This page will contain links to possible pro projects and links to the repos of my personal projects on github (api github).
