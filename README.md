@@ -17,3 +17,7 @@ This page will contain links to possible pro projects and links to the repos of 
 ## Skills
 
 This page will gather in an exhaustive way the acquired technical skills that I wish to put forward (possibly set up a tagging system linked to my github and pro projects).
+
+## Notes
+
+This page will contain all the articles I plan to write as public personal notes. (It will also allow me to practice my English writing skills).
