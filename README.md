@@ -1,44 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Personal Portfolio
 
-[Skills Idea](https://observablehq.com/@d3/disjoint-force-directed-graph)
+This site will be my personal technical portfolio.
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+The idea will be to have a page without scroll with animation to introduce myself briefly. 
+On this page will be 2 links to my github and my linkedin and 4 buttons leading to the following pages:
+path, projects, skills, notes (blog)
