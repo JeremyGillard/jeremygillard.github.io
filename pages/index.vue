@@ -1,36 +1,29 @@
 <template>
-  <h1>Hi, I am Jeremy Gillard</h1>
-  <h2>Software Engineer</h2>
-  <p>COMING SOON</p>
+  <div class="content">
+    <div class="title">
+      <h1>Hi, I am Jeremy Gillard</h1>
+      <h2>Software Engineer</h2>
+    </div>
+    <ContactSidebar />
+  </div>
 </template>
 
 <script setup>
-// import * as d3 from "d3";
+import ContactSidebar from "@/components/ContactSidebar.vue";
 </script>
 
 <style scoped>
+.content {
+  display: flex;
+}
+
 h1 {
   font-weight: 500;
   font-size: 5.6rem;
-  color: var(--primary-text);
 }
 
 h2 {
   font-weight: 500;
   font-size: 3.2rem;
-  color: var(--second-text);
-}
-
-section {
-  margin-top: 2.4rem;
-}
-
-p {
-  margin-top: 12.8rem;
-  letter-spacing: 0.2rem;
-  font-family: "Open Sans", sans-serif;
-  font-size: 3.2rem;
-  text-align: center;
-  color: var(--primary-text);
 }
 </style>

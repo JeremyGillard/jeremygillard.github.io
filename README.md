@@ -21,3 +21,15 @@ This page will gather in an exhaustive way the acquired technical skills that I 
 ## Notes
 
 This page will contain all the articles I plan to write as public personal notes. (It will also allow me to practice my English writing skills).
+
+---
+
+Home page Animation Idea:
+https://freefrontend.com/css-text-animations/
+https://codepen.io/ricardoolivaalonso/pen/wvvGoeY
+https://codepen.io/lefoy/pen/oXadRa
+https://codepen.io/alvaromontoro/pen/RmRjvg
+
+Best: Random text transform
+
+https://freefrontend.com/css-text-animations/
