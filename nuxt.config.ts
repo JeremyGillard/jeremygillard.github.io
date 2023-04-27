@@ -32,7 +32,7 @@ export default defineNuxtConfig({
           ],
           script: [
             {
-              src: 'https://kit.fontawesome.com/2b5c9d6355.js'
+              src: 'https://kit.fontawesome.com/eb5ef3cbe3.js'
             }
           ]
         }
