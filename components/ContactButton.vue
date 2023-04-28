@@ -21,12 +21,12 @@ export default {
 <style scoped>
 .contact-button {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 i {
   text-align: center;
-  font-size: 2.8em;
+  font-size: 2.4em;
 }
 
 p {
