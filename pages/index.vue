@@ -1,10 +1,10 @@
 <template>
-  <ContactSidebar />
   <div class="content">
     <div class="title">
       <h1>Hi, I am Jeremy Gillard</h1>
       <h2>Software Engineer</h2>
     </div>
+    <ContactSidebar />
   </div>
 </template>
 

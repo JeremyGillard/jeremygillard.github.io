@@ -35,10 +35,7 @@
 .sidebar {
   position: absolute;
   right: 34px;
-  height: calc(100vh - 2px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 34px;
 }
 ul {
   display: flex;
