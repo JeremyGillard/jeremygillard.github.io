@@ -16,20 +16,6 @@ export default defineNuxtConfig({
             { name: 'google-site-verification', content: 'yMwq5_himi0_H59TnD8WTJvdYnyiU4E9JcnXt3rddW0' }
             
           ],
-          link: [
-            {
-              rel: 'stylesheet',
-              href: 'https://fonts.googleapis.com/css?family=Nunito&family=Plus+Jakarta+Sans'
-            },
-            {
-              rel: 'stylesheet',
-              href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@300;400;500;600;700&display=swap'
-            },
-            {
-              rel: 'stylesheet',
-              href: 'https://fonts.googleapis.com/css2?family=Quicksand&display=swap'
-            }
-          ],
           script: [
             {
               src: 'https://kit.fontawesome.com/eb5ef3cbe3.js'
@@ -37,12 +23,13 @@ export default defineNuxtConfig({
           ]
         }
     },
-    modules: [
-      '@nuxt/content'
-    ],
-    content: {
-      highlight: {
-        theme: 'github-light'
+    googleFonts: {
+      download: true,
+      families: {
+        Quicksand: true
       }
-    }
+    },
+    modules: [
+      '@nuxtjs/google-fonts',
+    ],
 })

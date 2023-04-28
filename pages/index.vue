@@ -8,9 +8,7 @@
   </div>
 </template>
 
-<script setup>
-import ContactSidebar from "@/components/ContactSidebar.vue";
-</script>
+<script></script>
 
 <style scoped>
 .content {

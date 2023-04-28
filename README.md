@@ -25,11 +25,12 @@ This page will contain all the articles I plan to write as public personal notes
 ---
 
 Home page Animation Idea:
-https://freefrontend.com/css-text-animations/
-https://codepen.io/ricardoolivaalonso/pen/wvvGoeY
-https://codepen.io/lefoy/pen/oXadRa
-https://codepen.io/alvaromontoro/pen/RmRjvg
+
+https://freefrontend.com/css-text-animations/  
+https://codepen.io/ricardoolivaalonso/pen/wvvGoeY  
+https://codepen.io/lefoy/pen/oXadRa  
+https://codepen.io/alvaromontoro/pen/RmRjvg  
 
 Best: Random text transform
 
-https://freefrontend.com/css-text-animations/
+https://freefrontend.com/css-text-animations/  
