@@ -28,12 +28,17 @@
     </ul>
   </div>
 </template>
+
 <script></script>
+
 <style scoped>
 .sidebar {
-  /* border: 1px solid black; */
-  /* position: absolute;
-  right: 40px; */
+  position: absolute;
+  right: 34px;
+  height: calc(100vh - 2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul {
   display: flex;
