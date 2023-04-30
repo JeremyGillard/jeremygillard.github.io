@@ -26,6 +26,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  color: #303030;
   width: 100%;
   height: 100vh;
   background: var(--primary-background);
