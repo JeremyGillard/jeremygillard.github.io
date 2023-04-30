@@ -33,6 +33,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-dir
+      - name: List Directory
+        run: ls -la
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
