@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         }
     },
     googleFonts: {
-      download: true,
+      download: false,
       families: {
         Quicksand: true
       }
