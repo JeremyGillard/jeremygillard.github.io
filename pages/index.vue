@@ -2,9 +2,12 @@
   <div class="content">
     <div class="title">
       <h1>Hi, I am Jeremy Gillard</h1>
-      <h2>Software Engineer</h2>
+      <h2>
+        <DecodedText text="SOFTWARE ENGINEER" />
+      </h2>
     </div>
     <ContactSidebar />
+    <Navbar />
   </div>
 </template>
 
@@ -17,6 +20,10 @@
   justify-content: center;
   height: 100vh;
 }
+.title {
+  user-select: none;
+}
+
 h1 {
   font-weight: 500;
   font-size: 5.6rem;
@@ -24,6 +31,9 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.4rem;
+  overflow: hidden;
 }
 </style>
