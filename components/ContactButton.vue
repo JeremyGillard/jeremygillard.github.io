@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div class="contact-button">
     <a target="_blank" :href="url">
       <i :class="[type, id]"></i>
@@ -22,6 +22,12 @@ export default {
 .contact-button {
   text-align: center;
   font-size: 1.4rem;
+
+  animation-name: appear;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
 }
 
 i {
@@ -42,11 +48,20 @@ a {
 }
 
 a:hover {
-  color: #383838;
+  color: #303030;
 }
 
 a:hover p {
   top: 0.2em;
   opacity: 1;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
