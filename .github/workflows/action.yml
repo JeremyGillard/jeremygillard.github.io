@@ -1,9 +1,17 @@
-name: 'Deploy Nuxt 3 to GitHub Pages'
+name: Deploy Nuxt 3 to GitHub Pages
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -42,3 +50,5 @@ jobs:
       - uses: actions/upload-pages-artifact@v1
         with:
           path: .
+      - id: deployment
+        uses: actions/deploy-pages@v2
