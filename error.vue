@@ -1,11 +1,13 @@
 <template>
-  <div class="content">
-    <div class="title">
-      <h1>{{ error.statusCode }}</h1>
-      <h2>{{ error.message }}</h2>
+  <main>
+    <div class="content">
+      <div class="title">
+        <h1>{{ error.statusCode }}</h1>
+        <h2>{{ error.message }}</h2>
+      </div>
+      <button @click="handleError">Go back home</button>
     </div>
-    <button @click="handleError">Go back home</button>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -17,6 +19,10 @@ const handleError = () => clearError({ redirect: "/" });
 </script>
 
 <style scoped>
+:root {
+  --primary-background: #f7f7f7;
+}
+
 *,
 *::before,
 *::after {
@@ -37,7 +43,7 @@ body {
   color: #303030;
   width: 100%;
   height: 100vh;
-  background: #f7f7f7;
+  background: var(--primary-background);
 }
 .content {
   display: flex;
