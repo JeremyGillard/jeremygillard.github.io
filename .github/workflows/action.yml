@@ -1,0 +1,44 @@
+name: 'Deploy Nuxt 3 static site to GitHub Pages'
+description: 'Used to build and publish Nuxt 3 sources to its own repository GitHub Pages.'
+author: 'Jeremy Gillard'
+branding:
+  icon: play
+  color: blue
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Install dependencies
+        run: yarn
+      - name: Build
+        run: yarn generate
+      - name: Upload dist directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-dir
+          path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download dist directory
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-dir
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
