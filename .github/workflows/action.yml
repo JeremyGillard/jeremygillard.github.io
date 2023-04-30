@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-dir
-          path: ./dist/
+          path: /dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -37,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/
+          publish_dir: /dist
