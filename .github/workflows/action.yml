@@ -19,11 +19,15 @@ jobs:
         run: yarn
       - name: Build
         run: yarn generate
+      - name: List Directory
+        run: ls -la
+      - name: List dist Directory
+        run: ls -la dist
       - name: Upload dist directory
         uses: actions/upload-artifact@v3
         with:
           name: dist-dir
-          path: /dist
+          path: .output/public
 
   deploy:
     runs-on: ubuntu-latest
