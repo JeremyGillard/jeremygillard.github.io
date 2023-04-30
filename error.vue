@@ -17,10 +17,6 @@ const handleError = () => clearError({ redirect: "/" });
 </script>
 
 <style scoped>
-:root {
-  --primary-background: #f7f7f7;
-}
-
 *,
 *::before,
 *::after {
@@ -41,7 +37,7 @@ body {
   color: #303030;
   width: 100%;
   height: 100vh;
-  background: var(--primary-background);
+  background: #f7f7f7;
 }
 .content {
   display: flex;
@@ -59,7 +55,7 @@ body {
 h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 8rem;
+  font-size: 5.6rem;
   text-align: center;
 }
 
@@ -75,14 +71,14 @@ h2 {
 button {
   font-family: "Quicksand", sans-serif;
   position: relative;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #303030;
   animation-name: appear;
   animation-duration: 1s;
   animation-fill-mode: backwards;
   cursor: pointer;
   border: none;
-  background-color: var(--primary-background);
+  background-color: #f7f7f7;
 }
 
 button::before {
