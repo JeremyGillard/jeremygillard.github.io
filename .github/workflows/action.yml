@@ -1,9 +1,5 @@
 name: 'Deploy Nuxt 3 to GitHub Pages'
 
-branding:
-  icon: play
-  color: blue
-
 on:
   push:
     branches:
