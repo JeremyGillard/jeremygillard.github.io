@@ -1,9 +1,4 @@
-name: 'Deploy Nuxt 3 static site to GitHub Pages'
-description: 'Used to build and publish Nuxt 3 sources to its own repository GitHub Pages.'
-author: 'Jeremy Gillard'
-branding:
-  icon: play
-  color: blue
+name: 'Deploy Nuxt 3 to GitHub Pages'
 
 on:
   push:
