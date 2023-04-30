@@ -31,12 +31,14 @@ const handleError = () => clearError({ redirect: "/" });
 }
 
 h1 {
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 8rem;
   text-align: center;
 }
 
 h2 {
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 3.2rem;
   letter-spacing: 0.2rem;
@@ -45,7 +47,7 @@ h2 {
 }
 
 button {
-  font-family: Quicksand, sans-serif;
+  font-family: "Quicksand", sans-serif;
   position: relative;
   font-size: 2.4rem;
   color: #303030;
