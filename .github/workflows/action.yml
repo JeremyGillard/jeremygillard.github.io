@@ -22,22 +22,25 @@ jobs:
       - name: Upload dist directory
         uses: actions/upload-artifact@v3
         with:
-          name: dist-dir
-          path: .output/public
+          name: page
+          path: dist
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
     steps:
       - name: Download dist directory
         uses: actions/download-artifact@v3
         with:
-          name: dist-dir
-          path: dist
-      - name: List Directory
-        run: ls -la
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+          name: page
+          path: .
+      - uses: actions/configure-pages@v1
+      - uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v2
