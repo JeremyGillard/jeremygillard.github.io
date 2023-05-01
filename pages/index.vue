@@ -1,5 +1,6 @@
 <template>
   <div class="content">
+    <!-- <div class="square"></div> -->
     <div class="title">
       <h1>Hi, I am Jeremy Gillard</h1>
       <h2>
@@ -35,5 +36,11 @@ h2 {
   letter-spacing: 0.2rem;
   word-spacing: 0.4rem;
   overflow: hidden;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #537ecc;
 }
 </style>
