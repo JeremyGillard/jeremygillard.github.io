@@ -7,6 +7,7 @@
 <style>
 :root {
   --primary-background: #f7f7f7;
+  /* --neutral 60, --primary 30, --cta 10 */
 }
 
 *,
