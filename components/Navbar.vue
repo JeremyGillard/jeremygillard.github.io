@@ -5,13 +5,13 @@
         <a class="path" href="/path"> Path </a>
       </li>
       <li>
-        <a class="projects" href="#"> Projects </a>
+        <a class="about" href="/about"> About </a>
       </li>
       <li>
-        <a class="skills" href="#"> Skills </a>
+        <a class="projects" href="/projects"> Projects </a>
       </li>
       <li>
-        <a class="notes" href="#"> Notes </a>
+        <a class="notes" href="/notes"> Notes </a>
       </li>
     </ul>
   </nav>
@@ -24,12 +24,9 @@ export default {};
 <style scoped>
 .navbar {
   position: absolute;
-  bottom: 14rem;
+  bottom: 14vh;
   left: 0;
   right: 0;
-  /* margin-left: 18.8rem;
-  margin-right: 18.8rem; */
-  /* border: solid 1px black; */
 }
 
 ul {
@@ -50,11 +47,11 @@ a {
   animation-delay: 4s;
 }
 
-.projects {
+.about {
   animation-delay: 4.2s;
 }
 
-.skills {
+.projects {
   animation-delay: 4.4s;
 }
 

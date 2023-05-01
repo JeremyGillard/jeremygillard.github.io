@@ -34,8 +34,8 @@
 <style scoped>
 .sidebar {
   position: absolute;
-  right: 34px;
-  margin-top: 34px;
+  right: 4vw;
+  margin-top: 3.4rem;
 }
 ul {
   display: flex;
