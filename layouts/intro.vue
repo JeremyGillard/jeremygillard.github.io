@@ -17,7 +17,7 @@
   justify-content: center;
   height: 100vh;
   margin: 0 14vw;
-  border: solid 1px black;
+  /* border: solid 1px black; */
 }
 header {
   position: absolute;

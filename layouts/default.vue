@@ -13,7 +13,7 @@
 .layout {
   position: relative;
   margin: 0 14vw;
-  border: solid 1px black;
+  /* border: solid 1px black; */
 }
 header {
   margin: 6vh 0;
