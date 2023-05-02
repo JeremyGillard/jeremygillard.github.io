@@ -1,23 +1,16 @@
 <template>
-  <span class="decoded-text">
+  <span>
     <DecodedLetter v-for="letter in lettersFromString">
       {{ letter }}
     </DecodedLetter>
   </span>
 </template>
 
-<script>
-export default {
-  props: {
-    text: String,
-  },
-  computed: {
-    lettersFromString() {
-      return [...this.text];
-    },
-  },
-};
-</script>
+<script setup lang="ts">
+interface Props {
+  text: string;
+}
+const props = defineProps<Props>();
 
-<style scoped>
-</style>
+const lettersFromString = computed(() => [...props.text]);
+</script>
