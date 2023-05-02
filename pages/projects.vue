@@ -17,5 +17,6 @@ h1 {
   font-weight: 500;
   font-size: var(--text-size-xl);
   margin-bottom: 4.8vh;
+  text-align: center;
 }
 </style>
