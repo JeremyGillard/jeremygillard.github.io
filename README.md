@@ -14,9 +14,9 @@ This page will be presented as a timeline (animated downwards using scroll).
 
 This page will contain links to possible pro projects and links to the repos of my personal projects on github (api github).
 
-## Skills
+## About
 
-This page will gather in an exhaustive way the acquired technical skills that I wish to put forward (possibly set up a tagging system linked to my github and pro projects).
+This page will gather some informations about me including an exhaustive way the acquired technical skills that I wish to put forward (possibly set up a tagging system linked to my github and pro projects).
 
 ## Notes
 

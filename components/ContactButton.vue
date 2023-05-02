@@ -53,7 +53,7 @@ a:hover {
 
 a:hover p {
   top: 0.2em;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 @keyframes appear {

@@ -2,39 +2,22 @@
   <nav class="navbar">
     <ul>
       <li>
-        <a class="path" href="/path"> Path </a>
+        <NuxtLink class="projects" to="/projects">Projects</NuxtLink>
       </li>
       <li>
-        <a class="projects" href="#"> Projects </a>
+        <NuxtLink class="about" to="/about">About</NuxtLink>
       </li>
       <li>
-        <a class="skills" href="#"> Skills </a>
-      </li>
-      <li>
-        <a class="notes" href="#"> Notes </a>
+        <NuxtLink class="notes" to="/notes">Notes</NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
-.navbar {
-  position: absolute;
-  bottom: 14rem;
-  left: 0;
-  right: 0;
-  /* margin-left: 18.8rem;
-  margin-right: 18.8rem; */
-  /* border: solid 1px black; */
-}
-
 ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 a {
@@ -46,15 +29,11 @@ a {
   animation-fill-mode: backwards;
 }
 
-.path {
-  animation-delay: 4s;
-}
-
-.projects {
+.about {
   animation-delay: 4.2s;
 }
 
-.skills {
+.projects {
   animation-delay: 4.4s;
 }
 
