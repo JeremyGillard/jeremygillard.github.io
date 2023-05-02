@@ -21,7 +21,7 @@ let animationDelay = ref("");
 
 onMounted(() => {
   stringArrayNumber.value = [...getRandomNumberString()];
-  animationDelay.value = `${getRandomInt(1, 2)}s`;
+  animationDelay.value = `${getRandomInt(3, 4)}s`;
   animationDuration.value = `${getRandomInt(2, 5)}s`;
 });
 </script>
