@@ -7,24 +7,7 @@
         >
       </li>
       <li>
-        <NuxtLink class="about cta" to="/about">
-          About
-          <svg
-            class="svg"
-            width="31"
-            height="14"
-            viewBox="0 0 31 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 2L14.3095 11.1182C15.0167 11.642 15.9833 11.642 16.6905 11.1182L29 2"
-              stroke="#303030"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-          </svg>
-        </NuxtLink>
+        <NuxtLink class="about cta" to="/about"> About </NuxtLink>
       </li>
       <li>
         <NuxtLink class="notes normal-link" to="/notes">Notes</NuxtLink>
@@ -32,12 +15,6 @@
     </ul>
   </nav>
 </template>
-
-<script setup lang="ts">
-// import { gsap } from "gsap";
-
-// gsap.to(".svg", { y: "0.8rem", duration: 1 });
-</script>
 
 <style scoped>
 ul {
@@ -47,7 +24,7 @@ ul {
 
 a {
   position: relative;
-  font-size: 2.4rem;
+  font-size: var(--text-size-l);
   color: var(--primary-color);
   animation-name: appear;
   animation-duration: 1s;
