@@ -4,8 +4,6 @@
   </section>
 </template>
 
-<script></script>
-
 <style scoped>
 .content {
   margin-top: 4vh;
