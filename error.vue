@@ -48,7 +48,7 @@ a {
   animation-fill-mode: backwards;
   cursor: pointer;
   border: none;
-  background-color: #f7f7f7;
+  background-color: var(--neutral-color);
 }
 
 a::before {
