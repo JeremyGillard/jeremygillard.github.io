@@ -4,11 +4,7 @@ This site will be my personal technical portfolio.
 
 The idea will be to have a page without scroll with animation to introduce myself briefly. 
 On this page will be 2 links to my github and my linkedin and 4 buttons leading to the following pages:
-path, projects, skills, notes (blog)
-
-## Path
-
-This page will be presented as a timeline (animated downwards using scroll).
+projects, about, notes (blog)
 
 ## Projects
 
@@ -16,6 +12,7 @@ This page will contain links to possible pro projects and links to the repos of 
 
 ## About
 
+About will be in the same page as the home page (scroll down). The path will be displayed below.
 This page will gather some informations about me including an exhaustive way the acquired technical skills that I wish to put forward (possibly set up a tagging system linked to my github and pro projects).
 
 ## Notes
