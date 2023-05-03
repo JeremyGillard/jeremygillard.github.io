@@ -2,13 +2,15 @@
   <nav class="navbar">
     <ul>
       <li>
-        <NuxtLink class="projects" to="/projects">Projects</NuxtLink>
+        <NuxtLink class="projects normal-link" to="/projects"
+          >Projects</NuxtLink
+        >
       </li>
       <li>
-        <NuxtLink class="about" to="/about">About</NuxtLink>
+        <NuxtLink class="about cta" to="/about"> About </NuxtLink>
       </li>
       <li>
-        <NuxtLink class="notes" to="/notes">Notes</NuxtLink>
+        <NuxtLink class="notes normal-link" to="/notes">Notes</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -22,11 +24,15 @@ ul {
 
 a {
   position: relative;
-  font-size: 2.4rem;
-  color: #303030;
+  font-size: var(--text-size-l);
+  color: var(--primary-color);
   animation-name: appear;
   animation-duration: 1s;
   animation-fill-mode: backwards;
+}
+
+a:focus {
+  outline-color: var(--primary-color);
 }
 
 .about {
@@ -41,12 +47,12 @@ a {
   animation-delay: 4.6s;
 }
 
-a::before {
+.normal-link::before {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
-  height: 0.15rem;
+  height: 0.3rem;
   bottom: 0;
   left: 0;
   border-radius: 2rem;
@@ -55,8 +61,26 @@ a::before {
   transition: transform 0.3s ease;
 }
 
-a:hover::before {
+.normal-link:hover::before {
   transform: scaleX(1);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta:hover .svg {
+  transform: translateY(0.8rem);
+  /* margin-top: 0.8rem; */
+}
+
+.svg {
+  transform: translateY(0.4rem);
+  transition: transform 0.3s ease;
+  /* margin-top: 0.4rem; */
 }
 
 @keyframes appear {

@@ -11,7 +11,7 @@
 
 <style scoped>
 .layout {
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;

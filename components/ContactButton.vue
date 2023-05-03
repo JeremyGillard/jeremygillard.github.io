@@ -7,27 +7,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    label: String,
-    type: String,
-    id: String,
-    url: String,
-  },
-};
+<script setup lang="ts">
+defineProps<{
+  label: string;
+  type: string;
+  id: string;
+  url: string;
+}>();
 </script>
 
 <style scoped>
 .contact-button {
   text-align: center;
-  font-size: 1.4rem;
-
-  animation-name: appear;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in;
-  animation-delay: 5s;
-  animation-fill-mode: backwards;
+  font-size: var(--text-size-s);
 }
 
 i {
@@ -54,14 +46,5 @@ a:hover {
 a:hover p {
   top: 0.2em;
   opacity: 0.8;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 </style>

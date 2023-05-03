@@ -1,5 +1,6 @@
 <template>
   <div class="content">
+    <ContactSidebar />
     <div class="mask">
       <h1 class="name" ref="name">Hi, I am Jeremy Gillard</h1>
     </div>
