@@ -4,10 +4,6 @@
   </section>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
 .content {
   margin-top: 4vh;
