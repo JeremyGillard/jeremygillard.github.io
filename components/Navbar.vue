@@ -7,7 +7,7 @@
         >
       </li>
       <li>
-        <NuxtLink class="about cta" to="/about"> About </NuxtLink>
+        <NuxtLink class="about cta" to="#"> About </NuxtLink>
       </li>
       <li>
         <NuxtLink class="notes normal-link" to="/notes">Notes</NuxtLink>
