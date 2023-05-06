@@ -4,32 +4,240 @@
         {
             "title": "Looking for new partners",
             "details": "May 2023 - Currently",
-            "description": "My last experiences allowed me to explore partially or in depth my main fields of interest in computer science which are Development, Data Science, Cyber Security and System Administration. I have, therefore, today, an even more precise idea of the fields in which I would like to evolve later. I would like to improve my knowledge and experience in web or low level development, devops and/or cloud and cyber security. If you think you have an opportunity that matches my aspirations, please feel free to contact me."
+            "description": "My last experiences allowed me to explore partially or in depth my main fields of interest in computer science which are Development, Data Science, Cyber Security and System Administration. I have, therefore, today, an even more precise idea of the fields in which I would like to evolve later. I would like to improve my knowledge and experience in web or low level development, devops and/or cloud and cyber security. If you think you have an opportunity that matches my aspirations, please feel free to contact me.",
+            "tags": [
+                {
+                    "name": "Web Development",
+                    "category": "Field"
+                },
+                {
+                    "name": "DevOps",
+                    "category": "Field"
+                },
+                {
+                    "name": "Cloud",
+                    "category": "Field"
+                },
+                {
+                    "name": "Cyber Security",
+                    "category": "Field"
+                },
+                {
+                    "name": ".Net",
+                    "category": "Library"
+                },
+                {
+                    "name": "Vue",
+                    "category": "Library"
+                },
+                {
+                    "name": "Angular",
+                    "category": "Library"
+                },
+                {
+                    "name": "C#",
+                    "category": "Language"
+                },
+                {
+                    "name": "Javascript",
+                    "category": "Language"
+                },
+                {
+                    "name": "Rust",
+                    "category": "Language"
+                }
+            ]
         },
         {
             "title": "System Administrator, .Net Developer",
             "details": "Apr 2021 - May 2023 at NGroup [CDI]",
-            "description": "During this job, I was partly responsible for the maintenance and management of the company's internal IT equipment. From the implementation of the Jira Service Management system to the migration and maintenance of an exchange server on premise. From the management of network services (dhcp, dns, vlan, vpn, wifi) to the implementation of security systems and mechanisms. I also had the chance to create two tools in .Net."
+            "description": "During this job, I was partly responsible for the maintenance and management of the company's internal IT equipment. From the implementation of the Jira Service Management system to the migration and maintenance of an exchange server on premise. From the management of network services (dhcp, dns, vlan, vpn, wifi) to the implementation of security systems and mechanisms. I also had the chance to create two tools in .Net.",
+            "tags": [
+                {
+                    "name": "Sys Admin",
+                    "category": "Field"
+                },
+                {
+                    "name": "C#",
+                    "category": "Language"
+                },
+                {
+                    "name": "PowerShell",
+                    "category": "Language"
+                },
+                {
+                    "name": ".Net",
+                    "category": "Library"
+                },
+                {
+                    "name": "Exchange Server",
+                    "category": "Tools"
+                },
+                {
+                    "name": "Active Directory",
+                    "category": "Tools"
+                },
+                {
+                    "name": "PKI",
+                    "category": "Tools"
+                },
+                {
+                    "name": "Jira",
+                    "category": "Tools"
+                }
+            ]
         },
         {
             "title": "Python Developer, Data Analyst",
             "details": "Feb 2020 - May 2020 at IUT Lille [Internship]",
-            "description": "I was lucky enough to work on a Europe-wide research project at the Ecole Polytechnique de Lille. This project, named CoBra, aims to improve quality of both diagnosis and treatment of localized cancers, by developing a new medical robot prototype for brachytherapy and biopsy under guidance of MRI. During this internship, I developed a series of tools (Python scripts) to make present and future data from the lab more easily accessible. This allowed me to accelerate the analysis process of MRI images as well as their manipulation and sorting for future image processing or machine learning algorithms. At the same time, I first tried to verify that a more classical treatment approach could not be applied to the present project. I then turned to a more recent approach of machine learning and more precisely in deep learning. I was then able to make some initial explorations in order to be able to guide the team for their future software developments."
+            "description": "I was lucky enough to work on a Europe-wide research project at the Ecole Polytechnique de Lille. This project, named CoBra, aims to improve quality of both diagnosis and treatment of localized cancers, by developing a new medical robot prototype for brachytherapy and biopsy under guidance of MRI. During this internship, I developed a series of tools (Python scripts) to make present and future data from the lab more easily accessible. This allowed me to accelerate the analysis process of MRI images as well as their manipulation and sorting for future image processing or machine learning algorithms. At the same time, I first tried to verify that a more classical treatment approach could not be applied to the present project. I then turned to a more recent approach of machine learning and more precisely in deep learning. I was then able to make some initial explorations in order to be able to guide the team for their future software developments.",
+            "tags": [
+                {
+                    "name": "Data Science",
+                    "category": "Field"
+                },
+                {
+                    "name": "Python",
+                    "category": "Language"
+                },
+                {
+                    "name": "Pandas",
+                    "category": "Library"
+                },
+                {
+                    "name": "Matplotlib",
+                    "category": "Library"
+                },
+                {
+                    "name": "Numpy",
+                    "category": "Library"
+                },
+                {
+                    "name": "Pytorch",
+                    "category": "Library"
+                },
+                {
+                    "name": "Docker",
+                    "category": "Tools"
+                },
+                {
+                    "name": "Git",
+                    "category": "Tools"
+                }
+            ]
         },
         {
             "title": "Joomla maintainer, R Developer",
             "details": "Oct 2019 - Jan 2021 at CoActions Lab [Student]",
-            "description": "Most of my time in this job was spent helping to update and redesign the CoActions Lab website. This experience allowed me to get familiar with the Joomla CMS and to use my knowledge in Html, CSS and image manipulation/editing. Towards the end of this collaboration, I also had the chance to work with one of the lab's researchers, Gerard Derosiere, to create a visualisation tool in the statistical programming language R."
+            "description": "Most of my time in this job was spent helping to update and redesign the CoActions Lab website. This experience allowed me to get familiar with the Joomla CMS and to use my knowledge in Html, CSS and image manipulation/editing. Towards the end of this collaboration, I also had the chance to work with one of the lab's researchers, Gerard Derosiere, to create a visualisation tool in the statistical programming language R.",
+            "tags": [
+                {
+                    "name": "Development",
+                    "category": "Field"
+                },
+                {
+                    "name": "Html",
+                    "category": "Language"
+                },
+                {
+                    "name": "CSS",
+                    "category": "Language"
+                },
+                {
+                    "name": "R",
+                    "category": "Language"
+                },
+                {
+                    "name": "Joomla",
+                    "category": "Library"
+                },
+                {
+                    "name": "Figma",
+                    "category": "Tools"
+                }
+            ]
         },
         {
-            "title": "CS Bachelor’s degree, Indusctrial IT Orientation",
+            "title": "CS Bachelor’s degree",
             "details": "Sep 2017 - Feb 2021 at ESI",
-            "description": "From analysis (OOP, UML, SCRUM) to concrete application development in Java and C++, my studies have also given me a solid background in linux system administration and database management (from modeling to implementation via MySql or PostgreSql). Thanks to my option, I enriched my knowledge on subjects such as the many protocols that make up the Internet and how it works, IOT, embedded systems or even certain machine learning techniques. During my last year of study, I focused more precisely on the fields of web development and data science."
+            "description": "From analysis (OOP, UML, SCRUM) to concrete application development in Java and C++, my studies have also given me a solid background in linux system administration and database management (from modeling to implementation via MySql or PostgreSql). Thanks to my option, I enriched my knowledge on subjects such as the many protocols that make up the Internet and how it works, IOT, embedded systems or even certain machine learning techniques. During my last year of study, I focused more precisely on the fields of web development and data science.",
+            "tags": [
+                {
+                    "name": "Development",
+                    "category": "Field"
+                },
+                {
+                    "name": "Sys Admin",
+                    "category": "Field"
+                },
+                {
+                    "name": "C++",
+                    "category": "Language"
+                },
+                {
+                    "name": "Java",
+                    "category": "Language"
+                },
+                {
+                    "name": "C",
+                    "category": "Language"
+                },
+                {
+                    "name": "Python",
+                    "category": "Language"
+                },
+                {
+                    "name": "SQL",
+                    "category": "Language"
+                },
+                {
+                    "name": "Qt",
+                    "category": "Library"
+                },
+                {
+                    "name": "Tensorflow",
+                    "category": "Library"
+                },
+                {
+                    "name": "Postgres",
+                    "category": "Tools"
+                },
+                {
+                    "name": "Git",
+                    "category": "Tools"
+                },
+                {
+                    "name": "Linux",
+                    "category": "Tools"
+                }
+            ]
         },
         {
             "title": "HoReCa",
             "details": "Mar 2010 - Jun 2019 [Student]",
-            "description": "From the time I was of legal working age (16) until almost the end of my higher education, I worked in various establishments in HoReCa. To name just a few, I worked in \"La Soeur du Patron\", \"Dionysos\" and \"Le Roy d'Espagne\" as a waiter. Towards the end of these years, I worked at the \"Petit Pont\" and the \"Knock Out\" as a head waiter and at the \"Hotel Satellite\" as a receptionist. Gardening and building sites were also part of my trials as a young worker."
+            "description": "From the time I was of legal working age (16) until almost the end of my higher education, I worked in various establishments in HoReCa. To name just a few, I worked in \"La Soeur du Patron\", \"Dionysos\" and \"Le Roy d'Espagne\" as a waiter. Towards the end of these years, I worked at the \"Petit Pont\" and the \"Knock Out\" as a head waiter and at the \"Hotel Satellite\" as a receptionist. Gardening and building sites were also part of my trials as a young worker.",
+            "tags": [
+                {
+                    "name": "La Soeur de Patron",
+                    "category": "Other"
+                },
+                {
+                    "name": "Le Roy d'Espagne",
+                    "category": "Other"
+                },
+                {
+                    "name": "Le Petit Pont",
+                    "category": "Other"
+                },
+                {
+                    "name": "Knock Out",
+                    "category": "Other"
+                },
+                {
+                    "name": "Hotel Satellite",
+                    "category": "Other"
+                }
+            ]
         }
     ]
 }
