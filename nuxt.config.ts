@@ -26,10 +26,15 @@ export default defineNuxtConfig({
     googleFonts: {
       download: false,
       families: {
-        Quicksand: true
+        Quicksand: true,
+        Roboto: true
       }
+    },
+    content: {
+      documentDriven: true
     },
     modules: [
       '@nuxtjs/google-fonts',
+      '@nuxt/content'
     ],
 })
