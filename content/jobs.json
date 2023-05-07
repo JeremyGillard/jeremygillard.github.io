@@ -3,7 +3,10 @@
     [
         {
             "title": "Looking for new partners",
-            "details": "May 2023 - Currently",
+            "startDate": "May 2023",
+            "endDate": "Currently",
+            "company": "",
+            "contractType": "",
             "description": "My last experiences allowed me to explore partially or in depth my main fields of interest in computer science which are Development, Data Science, Cyber Security and System Administration. I have, therefore, today, an even more precise idea of the fields in which I would like to evolve later. I would like to improve my knowledge and experience in web or low level development, devops and/or cloud and cyber security. If you think you have an opportunity that matches my aspirations, please feel free to contact me.",
             "tags": [
                 {
@@ -50,7 +53,10 @@
         },
         {
             "title": "System Administrator, .Net Developer",
-            "details": "Apr 2021 - May 2023 at NGroup [CDI]",
+            "startDate": "Apr 2021",
+            "endDate": "May 2023",
+            "company": "NGroup",
+            "contractType": "CDI",
             "description": "During this job, I was partly responsible for the maintenance and management of the company's internal IT equipment. From the implementation of the Jira Service Management system to the migration and maintenance of an exchange server on premise. From the management of network services (dhcp, dns, vlan, vpn, wifi) to the implementation of security systems and mechanisms. I also had the chance to create two tools in .Net.",
             "tags": [
                 {
@@ -89,7 +95,10 @@
         },
         {
             "title": "Python Developer, Data Analyst",
-            "details": "Feb 2020 - May 2020 at IUT Lille [Internship]",
+            "startDate": "Feb 2020",
+            "endDate": "May 2020",
+            "company": "IUT Lille",
+            "contractType": "Internship",
             "description": "I was lucky enough to work on a Europe-wide research project at the Ecole Polytechnique de Lille. This project, named CoBra, aims to improve quality of both diagnosis and treatment of localized cancers, by developing a new medical robot prototype for brachytherapy and biopsy under guidance of MRI. During this internship, I developed a series of tools (Python scripts) to make present and future data from the lab more easily accessible. This allowed me to accelerate the analysis process of MRI images as well as their manipulation and sorting for future image processing or machine learning algorithms. At the same time, I first tried to verify that a more classical treatment approach could not be applied to the present project. I then turned to a more recent approach of machine learning and more precisely in deep learning. I was then able to make some initial explorations in order to be able to guide the team for their future software developments.",
             "tags": [
                 {
@@ -128,7 +137,10 @@
         },
         {
             "title": "Joomla maintainer, R Developer",
-            "details": "Oct 2019 - Jan 2021 at CoActions Lab [Student]",
+            "startDate": "Oct 2019",
+            "endDate": "Jan 2021",
+            "company": "CoActions Lab",
+            "contractType": "Student Job",
             "description": "Most of my time in this job was spent helping to update and redesign the CoActions Lab website. This experience allowed me to get familiar with the Joomla CMS and to use my knowledge in Html, CSS and image manipulation/editing. Towards the end of this collaboration, I also had the chance to work with one of the lab's researchers, Gerard Derosiere, to create a visualisation tool in the statistical programming language R.",
             "tags": [
                 {
@@ -159,7 +171,10 @@
         },
         {
             "title": "CS Bachelor’s degree",
-            "details": "Sep 2017 - Feb 2021 at ESI",
+            "startDate": "Sep 2017",
+            "endDate": "Feb 2021",
+            "company": "ESI",
+            "contractType": "Student",
             "description": "From analysis (OOP, UML, SCRUM) to concrete application development in Java and C++, my studies have also given me a solid background in linux system administration and database management (from modeling to implementation via MySql or PostgreSql). Thanks to my option, I enriched my knowledge on subjects such as the many protocols that make up the Internet and how it works, IOT, embedded systems or even certain machine learning techniques. During my last year of study, I focused more precisely on the fields of web development and data science.",
             "tags": [
                 {
@@ -214,7 +229,10 @@
         },
         {
             "title": "HoReCa",
-            "details": "Mar 2010 - Jun 2019 [Student]",
+            "startDate": "Mar 2010",
+            "endDate": "Jun 2019",
+            "company": "",
+            "contractType": "Student Job",
             "description": "From the time I was of legal working age (16) until almost the end of my higher education, I worked in various establishments in HoReCa. To name just a few, I worked in \"La Soeur du Patron\", \"Dionysos\" and \"Le Roy d'Espagne\" as a waiter. Towards the end of these years, I worked at the \"Petit Pont\" and the \"Knock Out\" as a head waiter and at the \"Hotel Satellite\" as a receptionist. Gardening and building sites were also part of my trials as a young worker.",
             "tags": [
                 {
