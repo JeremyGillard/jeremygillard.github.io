@@ -24,7 +24,7 @@ defineProps<{
 
 i {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 p {
