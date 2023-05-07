@@ -19,7 +19,7 @@ defineProps<{
 <style scoped>
 .contact-button {
   text-align: center;
-  font-size: var(--text-size-s);
+  font-size: var(--fs-300);
 }
 
 i {
