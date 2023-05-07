@@ -20,10 +20,10 @@
 const route = useRoute();
 const aboutHRef = computed(() => {
   if (route.name == "index") {
-    if (route.fullPath == "/#timeline-section-2") {
+    if (route.fullPath == "/#timeline-anchor-layout") {
       return "/";
     } else {
-      return "#timeline-section-2";
+      return "#timeline-anchor-layout";
     }
   }
   return "/";
