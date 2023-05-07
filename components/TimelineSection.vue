@@ -48,22 +48,28 @@ const details = computed(() => {
 </script>
 
 <style scoped>
+.timeline-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
 ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.4rem;
 }
 
 h3 {
   font-size: var(--fs-500);
   width: max-content;
+  max-width: 80vw;
 }
 
 h4 {
   font-size: var(--fs-400);
-  margin-bottom: 1rem;
 }
 
 p {
