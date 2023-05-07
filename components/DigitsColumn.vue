@@ -37,7 +37,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   line-height: 2.4rem;
-  background: var(--neutral-color);
+  background: var(--clr-neutral-400);
   border-radius: 1.2rem;
   text-align: center;
   animation-name: decode;

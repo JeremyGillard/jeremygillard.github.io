@@ -1,7 +1,7 @@
 <template>
-  <div class="tag" :style="{ backgroundColor: tagColor }">
+  <li class="tag" :style="{ backgroundColor: tagColor }">
     {{ name }}
-  </div>
+  </li>
 </template>
 
 <script setup lang="ts">
@@ -32,7 +32,8 @@ const tagColor = computed(() => {
 .tag {
   padding: 0.4rem 0.8rem;
   border-radius: 1rem;
-  font-weight: 600;
   width: fit-content;
+  font-size: var(--fs-300);
+  font-weight: 600;
 }
 </style>

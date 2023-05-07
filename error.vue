@@ -30,25 +30,25 @@ const handleError = () => clearError({ redirect: "/" });
 
 h1 {
   font-weight: 500;
-  font-size: var(--text-size-xl);
+  font-size: var(--fs-600);
   text-align: center;
 }
 
 h2 {
   font-weight: 500;
-  font-size: var(--text-size-l);
+  font-size: var(--fs-500);
 }
 
 a {
   position: relative;
-  font-size: var(--text-size-l);
+  font-size: var(--fs-500);
   color: #303030;
   animation-name: appear;
   animation-duration: 1s;
   animation-fill-mode: backwards;
   cursor: pointer;
   border: none;
-  background-color: var(--neutral-color);
+  background-color: var(--clr-neutral-400);
 }
 
 a::before {

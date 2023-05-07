@@ -12,7 +12,10 @@ interface Tag {
 
 interface Job {
     title: string;
-    details: string;
+    startDate: string;
+    endDate: string;
+    company: string;
+    contractType: string;
     description: string;
     tags: Tag[];
 }

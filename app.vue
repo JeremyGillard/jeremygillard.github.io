@@ -1,18 +1,22 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <NuxtPage />
 </template>
 
 <style>
 :root {
-  --neutral-color: #f7f7f7; /* 60 */
-  --primary-color: #303030; /* 30 */
-  --calltoa-color: #537ecc; /* 10 */
-  --text-size-xl: 5.6rem;
-  --text-size-l: 2.4rem;
-  --text-size-m: 1.6rem;
-  --text-size-s: 1.4rem;
+  --clr-neutral-400: #f7f7f7; /* 60 */
+  --clr-primary-400: #303030; /* 30 */
+  --clr-cta-400: #537ecc; /* 10 */
+
+  --ff-heading: "Quicksand", sans-serif;
+  --ff-body: "Roboto", sans-serif;
+
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+  --fs-300: 0.875rem;
 }
 
 *,
@@ -26,13 +30,38 @@
 
 html {
   box-sizing: inherit;
-  font-size: 0.625rem;
 }
 
 body {
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-  color: var(--primary-color);
-  background: var(--neutral-color);
+  font-family: var(--ff-heading);
+  color: var(--clr-primary-400);
+  background: var(--clr-neutral-400);
+}
+
+p {
+  font-family: var(--ff-body);
+}
+
+@media (width < 1000px) {
+  :root {
+    --fs-800: 3.25rem;
+    --fs-700: 1.325rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.75rem;
+  }
+}
+
+@media (width < 600px) {
+  :root {
+    --fs-800: 1.75rem;
+    --fs-700: 1rem;
+    --fs-600: 1.25rem;
+    --fs-500: 1.25rem;
+    --fs-400: 0.875rem;
+    --fs-300: 0.675rem;
+  }
 }
 </style>

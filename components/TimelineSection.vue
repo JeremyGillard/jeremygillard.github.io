@@ -1,59 +1,79 @@
 <template>
-  <section>
+  <section class="timeline-section">
     <header>
-      <div class="title">
-        <h3>{{ title }}</h3>
-        <h4>{{ details }}</h4>
+      <h3>{{ title }}</h3>
+      <div class="details">
+        <h4>{{ period }} {{ details }}</h4>
       </div>
-      <ul>
-        <li v-for="(tag, index) in tags" :key="index">
-          <TimelineTag :name="tag.name" :category="tag.category" />
-        </li>
-      </ul>
     </header>
     <p>{{ description }}</p>
+    <ul>
+      <TimelineTag
+        v-for="(tag, index) in tags"
+        :key="index"
+        :name="tag.name"
+        :category="tag.category"
+      />
+    </ul>
   </section>
 </template>
 
 <script setup lang="ts">
 import { Tag } from "~~/utils/timelinetypes";
 
-defineProps<{
+const { startDate, endDate, company, contractType } = defineProps<{
   title: string;
-  details: string;
+  startDate: string;
+  endDate: string;
+  company: string;
+  contractType: string;
   description: string;
   tags: Tag[];
 }>();
+
+const period = computed(() => {
+  return `${startDate} - ${endDate}`;
+});
+
+const details = computed(() => {
+  let details = "";
+  if (company) {
+    details += `at ${company}`;
+  }
+  if (contractType) {
+    details += ` [${contractType}]`;
+  }
+  return details;
+});
 </script>
 
 <style scoped>
-header {
+.timeline-section {
   display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  gap: 0.4rem;
 }
 
 h3 {
-  font-family: Roboto, sans-serif;
-  font-size: 2.4rem;
+  font-size: var(--fs-500);
   width: max-content;
+  max-width: 80vw;
 }
 
 h4 {
-  font-family: Roboto, sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: var(--fs-400);
 }
 
 p {
-  font-family: Roboto, sans-serif;
-  font-size: 1.4rem;
+  font-size: var(--fs-400);
   text-align: justify;
 }
 </style>
