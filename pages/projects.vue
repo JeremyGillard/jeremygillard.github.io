@@ -1,7 +1,9 @@
 <template>
-  <section class="content">
-    <h1>Projects</h1>
-  </section>
+  <NuxtLayout>
+    <main class="content">
+      <h1>Projects</h1>
+    </main>
+  </NuxtLayout>
 </template>
 
 <style scoped>
@@ -11,7 +13,7 @@
 
 h1 {
   font-weight: 500;
-  font-size: var(--text-size-xl);
+  font-size: var(--fs-600);
   margin-bottom: 4.8vh;
   text-align: center;
 }
