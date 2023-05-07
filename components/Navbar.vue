@@ -7,7 +7,7 @@
         >
       </li>
       <li>
-        <NuxtLink class="about cta" to="#"> About </NuxtLink>
+        <NuxtLink class="about cta" :to="aboutHRef"> About </NuxtLink>
       </li>
       <li>
         <NuxtLink class="notes normal-link" to="/notes">Notes</NuxtLink>
@@ -16,23 +16,41 @@
   </nav>
 </template>
 
+<script setup lang="ts">
+const route = useRoute();
+const aboutHRef = computed(() => {
+  if (route.name == "index") {
+    if (route.fullPath == "/#timeline-section-2") {
+      return "/";
+    } else {
+      return "#timeline-section-2";
+    }
+  }
+  return "/";
+});
+</script>
+
 <style scoped>
 ul {
+  height: 10vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
+  background: var(--clr-neutral-400);
 }
 
 a {
   position: relative;
-  font-size: var(--text-size-l);
-  color: var(--primary-color);
+  font-size: var(--fs-500);
+  color: var(--clr-primary-400);
   animation-name: appear;
   animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 
 a:focus {
-  outline-color: var(--primary-color);
+  outline-color: var(--clr-primary-400);
 }
 
 .about {
@@ -52,7 +70,7 @@ a:focus {
   position: absolute;
   display: block;
   width: 100%;
-  height: 0.3rem;
+  height: 3px;
   bottom: 0;
   left: 0;
   border-radius: 2rem;
