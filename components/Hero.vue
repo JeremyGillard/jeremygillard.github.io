@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <!-- <ContactSidebar /> -->
+    <ContactSidebar />
     <div class="hero-anchor-layout"></div>
     <header>
       <div>
@@ -53,6 +53,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: -1;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -78,9 +79,6 @@ svg {
   stroke: var(--clr-primary-400);
   stroke-width: 2.4px;
   stroke-linecap: round;
-}
-.content {
-  user-select: none;
 }
 
 .mask {
