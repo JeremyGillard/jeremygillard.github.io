@@ -1,21 +1,27 @@
 <template>
   <div class="layout">
+    <slot name="hero"></slot>
     <header>
       <Navbar />
     </header>
-    <main>
-      <slot />
-    </main>
+    <slot></slot>
   </div>
 </template>
 
 <style scoped>
 .layout {
-  position: relative;
-  margin: 0 14vw;
-  /* border: solid 1px black; */
+  max-width: 64vw;
+  margin: 0 auto;
 }
+
+@media (width < 600px) {
+  .layout {
+    max-width: 80vw;
+  }
+}
+
 header {
-  margin: 6vh 0;
+  position: sticky;
+  top: 0;
 }
 </style>
