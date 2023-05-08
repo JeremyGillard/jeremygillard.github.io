@@ -1,24 +1,22 @@
 <template>
   <div ref="area" class="timeline-area">
-    <div class="timeline-svg-ref">
-      <section
-        id="timeline-anchor-layout"
-        class="timeline-anchor-layout"
-      ></section>
-      <TimelineSection
-        v-for="(job, index) in jobs"
-        :key="index"
-        :id="timelineSectioName(index)"
-        :class="timelineSectioName(index)"
-        :title="job.title"
-        :start-date="job.startDate"
-        :end-date="job.endDate"
-        :company="job.company"
-        :contract-type="job.contractType"
-        :description="job.description"
-        :tags="job.tags"
-      />
-    </div>
+    <section
+      id="timeline-anchor-layout"
+      class="timeline-anchor-layout"
+    ></section>
+    <TimelineSection
+      v-for="(job, index) in jobs"
+      :key="index"
+      :id="timelineSectioName(index)"
+      :class="timelineSectioName(index)"
+      :title="job.title"
+      :start-date="job.startDate"
+      :end-date="job.endDate"
+      :company="job.company"
+      :contract-type="job.contractType"
+      :description="job.description"
+      :tags="job.tags"
+    />
   </div>
 </template>
 
