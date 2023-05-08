@@ -6,12 +6,8 @@
 
     <template #default>
       <main class="content">
-        <Timeline />
+        <TimelineArea />
       </main>
     </template>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>
