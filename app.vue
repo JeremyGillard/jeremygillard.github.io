@@ -30,6 +30,7 @@
 
 html {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
