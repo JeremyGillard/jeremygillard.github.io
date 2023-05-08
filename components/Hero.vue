@@ -12,8 +12,7 @@
         </svg>
         <div class="mask">
           <h2 class="title">
-            <!-- <DecodedText text="SOFTWARE ENGINEER" /> -->
-            SOFTWARE ENGINEER
+            <DecodedText text="SOFTWARE ENGINEER" />
           </h2>
         </div>
       </div>
@@ -101,7 +100,6 @@ svg {
   letter-spacing: 0.2rem;
   word-spacing: 0.4rem;
   overflow: hidden;
-  margin-top: 0.2rem;
-  line-height: 2.2rem;
+  margin-top: 0.6rem;
 }
 </style>
