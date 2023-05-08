@@ -33,26 +33,24 @@ onMounted(() => {
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: -14rem;
+  bottom: 0.22rem;
   display: flex;
   flex-direction: column;
-  line-height: 2.4rem;
+  line-height: var(--fs-600);
   background: var(--clr-neutral-400);
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   text-align: center;
   animation-name: decode;
-  /* animation-duration: 5s; */
   animation-timing-function: ease-in-out;
-  /* animation-delay: 2s; */
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes decode {
   from {
-    bottom: 0.4rem;
+    bottom: 0.22rem;
   }
   to {
-    bottom: -14rem;
+    bottom: -10.4rem;
   }
 }
 </style>
