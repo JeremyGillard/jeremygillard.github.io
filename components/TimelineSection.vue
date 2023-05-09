@@ -54,10 +54,14 @@ const section = ref<HTMLElement>();
 
 onMounted(() => {
   gsap.from(`.${section.value?.id}`, {
-    scrollTrigger: `.${section.value?.id}`,
-    y: 80,
+    scrollTrigger: {
+      trigger: `.${section.value?.id}`,
+      start: "top 60%",
+      // markers: true,
+    },
+    y: 60,
     opacity: 0,
-    delay: 0.6,
+    delay: 0.2,
     duration: 1,
   });
 });
