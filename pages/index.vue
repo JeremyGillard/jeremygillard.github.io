@@ -11,3 +11,9 @@
     </template>
   </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+onMounted(async () => {
+  await navigateTo("/");
+});
+</script>

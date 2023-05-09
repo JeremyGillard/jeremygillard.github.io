@@ -1,5 +1,5 @@
 <template>
-  <section class="timeline-section">
+  <section ref="section" class="timeline-section">
     <header>
       <h3>{{ title }}</h3>
       <div class="details">
@@ -45,6 +45,26 @@ const details = computed(() => {
   }
   return details;
 });
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+const section = ref<HTMLElement>();
+
+onMounted(() => {
+  gsap.from(`.${section.value?.id}`, {
+    scrollTrigger: {
+      trigger: `.${section.value?.id}`,
+      start: "top 60%",
+      // markers: true,
+    },
+    y: 60,
+    opacity: 0,
+    delay: 0.2,
+    duration: 1,
+  });
+});
 </script>
 
 <style scoped>
@@ -52,6 +72,7 @@ const details = computed(() => {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
+  z-index: -1;
 }
 
 ul {

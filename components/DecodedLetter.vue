@@ -9,5 +9,6 @@
 .decoded-letter {
   position: relative;
   padding: 0 0.2rem;
+  z-index: -10;
 }
 </style>
