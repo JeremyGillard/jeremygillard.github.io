@@ -21,15 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { Job } from "~~/utils/timelinetypes";
-// const jobs = await useJobs();
-let jobs = ref<Job[]>();
-
-const { data } = await useAsyncData("jobs", () =>
-  queryContent("/jobs").findOne()
-);
-
-jobs = data.value!.body.map((elt: Job) => elt);
+const jobs = await useJobs();
 
 function timelineSectioName(index: number): string {
   return `timeline-section-${index}`;
