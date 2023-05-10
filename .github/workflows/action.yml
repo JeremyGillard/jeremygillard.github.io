@@ -15,8 +15,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Test fetch.projects.ts
+        run: node fetch.projects.ts
+
   build:
     runs-on: ubuntu-latest
+    needs: fetch
     steps:
       - name: Checkout
         uses: actions/checkout@v3
