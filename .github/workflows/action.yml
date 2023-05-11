@@ -24,8 +24,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - name: Test fetch.projects.ts
-        run: node fetch.projects.ts
+      - name: Fetch Projects README files
+        run: node fetch.projects.js
         env:
           TEST_TOKEN: ${{ secrets.TEST_TOKEN }}
 
