@@ -39,11 +39,13 @@ a {
   color: #838383;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #303030;
 }
 
-a:hover p {
+a:hover p,
+a:focus p {
   top: 0.2em;
   opacity: 0.8;
 }
