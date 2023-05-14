@@ -37,14 +37,13 @@ function getPinnedRepoCallback(response) {
     data.forEach(
       repository => repository.readmeUrl = readmeUrlFromRepositoryUrl(repository)
     );
-    console.log(data);
     data.forEach(repository => repositories.push(repository));
   });
 
   response.on('close', () => {
     repositories.forEach(repository => {
       const path = `${PROJECTS_CONTENT_PATH}${repository.name}.md`;
-      const file = fs.createWriteStream(path);
+      const file = fs.createWriteStream(path, { flags: 'w' });
       https.get(repository.readmeUrl, (resp) => {
         resp.pipe(file);
         file.on('finish', () => {
