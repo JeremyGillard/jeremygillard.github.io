@@ -4,6 +4,7 @@
       id="timeline-anchor-layout"
       class="timeline-anchor-layout"
     ></section>
+    <!-- <Timeline :height="timelineHeight" /> -->
     <TimelineSection
       v-for="(job, index) in jobs"
       :key="index"
@@ -36,6 +37,13 @@ onMounted(() => {
 
 <style scoped>
 .timeline-area {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 30vh 0;
+  gap: 30vh;
+}
+/* .timeline-area {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(38, 12.5vh);
@@ -109,7 +117,7 @@ onMounted(() => {
     grid-column: 2 / span 6;
     grid-row: 26 / span 3;
   }
-}
+} */
 
 @media (width < 600px) {
   .timeline-area {

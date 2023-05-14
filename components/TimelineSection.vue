@@ -73,6 +73,7 @@ onMounted(() => {
   flex-flow: column nowrap;
   gap: 1rem;
   z-index: -1;
+  max-width: 460px;
 }
 
 ul {

@@ -18,8 +18,8 @@
 <script setup lang="ts">
 const { page, navigation } = useContent();
 
-console.log(navigation.value);
-console.log(page.value);
+// console.log(navigation.value);
+// console.log(page.value);
 </script>
 
 <style scoped></style>
