@@ -73,8 +73,12 @@ const getPinnedRepoBody = JSON.stringify({
   }`,
 });
 
-https.request(
-  getPinnedRepoOptions, 
-  getPinnedRepoCallback
+if (process.env.API_TOKEN) {
+  https.request(
+    getPinnedRepoOptions, 
+    getPinnedRepoCallback
   ).end(getPinnedRepoBody);
+} else {
+  console.error('API_TOKEN is empty.');
+}
   

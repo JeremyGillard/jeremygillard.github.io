@@ -25,9 +25,9 @@ jobs:
         with:
           node-version: "16"
       - name: Fetch Projects README files
+        run: node ./scripts/fetch.projects.js
         env:
           API_TOKEN: ${{ secrets.API_TOKEN }}
-        run: node ./scripts/fetch.projects.js
 
   build:
     runs-on: ubuntu-latest
