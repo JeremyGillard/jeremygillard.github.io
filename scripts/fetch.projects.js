@@ -37,7 +37,6 @@ function getPinnedRepoCallback(response) {
     data.forEach(
       repository => repository.readmeUrl = readmeUrlFromRepositoryUrl(repository)
     );
-    console.log(data);
     data.forEach(repository => repositories.push(repository));
   });
 
