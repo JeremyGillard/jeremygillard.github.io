@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
     <main class="content">
-      <h1>Projects</h1>
+      <h1>Notes</h1>
       <div></div>
     </main>
   </NuxtLayout>
