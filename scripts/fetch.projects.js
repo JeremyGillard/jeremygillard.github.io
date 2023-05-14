@@ -4,7 +4,7 @@ if (!process.env.GITHUB_WORKFLOW) {
 const https = require('https');
 const fs = require('fs');
 
-const PROJECTS_CONTENT_PATH = '/content/projects';
+const PROJECTS_CONTENT_PATH = './content/projects/';
 const repositories = [];
 
 function readmeUrlFromRepositoryUrl(repository) {
@@ -26,7 +26,6 @@ const getPinnedRepoOptions = {
 
 function getPinnedRepoCallback(response) {
   let stringData = '';
-  response.setEncoding('utf-8');
 
   response.on('data', function(chunk) {
     stringData += chunk;
@@ -40,8 +39,19 @@ function getPinnedRepoCallback(response) {
     );
     console.log(data);
     data.forEach(repository => repositories.push(repository));
-    // data.foreach(node => repositories.push(node));
-    // console.log(data);
+  });
+
+  response.on('close', () => {
+    repositories.forEach(repository => {
+      const path = `${PROJECTS_CONTENT_PATH}${repository.name}.md`;
+      const file = fs.createWriteStream(path);
+      https.get(repository.readmeUrl, (resp) => {
+        resp.pipe(file);
+        file.on('finish', () => {
+          file.close();
+        });
+      })
+    });
   });
 }
 
@@ -66,12 +76,5 @@ const getPinnedRepoBody = JSON.stringify({
 https.request(
   getPinnedRepoOptions, 
   getPinnedRepoCallback
-).end(getPinnedRepoBody);
+  ).end(getPinnedRepoBody);
   
-  
-    // response.pipe(file);
-    // file.on("finish", () => {
-    //     file.close();
-    //     console.log("Download Completed");
-    // });
-    // const file = fs.createWriteStream('pinnedrepo.json');
