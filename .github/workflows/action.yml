@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
+      - name: List Directory
+        run: ls -la
       - name: Fetch Projects README files
         run: node ./scripts/fetch.projects.js
         env:
