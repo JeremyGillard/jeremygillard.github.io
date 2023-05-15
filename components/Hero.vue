@@ -36,12 +36,14 @@ onMounted(() => {
   line.value!.setAttribute("stroke-dashoffset", `${lineLength}`);
 
   let tl = gsap.timeline();
+  tl.set(".navlink", { opacity: 0 });
   tl.set(".line", { opacity: 1 });
   tl.to(".line", { strokeDashoffset: 0, duration: 0.8 });
   tl.to(".name", { top: 0, duration: 0.6, ease: Power4.easeOut });
   tl.to(".title", { bottom: 0, duration: 0.6, ease: Power4.easeOut });
   tl.to(".line", { strokeDashoffset: -lineLength, duration: 0.6 }, 1.8);
   tl.set(".line", { opacity: 0 });
+  tl.to(".navlink", { opacity: 1, duration: 1, delay: 2.8, stagger: 0.2 });
 });
 </script>
 
