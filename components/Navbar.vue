@@ -43,12 +43,11 @@ const homePageOpacity = computed(() => {
 
 <style scoped>
 ul {
-  height: 10vh;
+  /* border: solid 1px black; */
+  height: 16vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5vh;
-  margin-top: 2vh;
   background: var(--clr-neutral-400);
 }
 
