@@ -31,6 +31,14 @@ const aboutHRef = computed(() => {
   return "/";
 });
 
+const showNavigation = computed(() => {
+  if (route.fullPath == "/") {
+    return "scaleX(0)";
+  } else {
+    return "scaleX(1)";
+  }
+});
+
 // Due to gsap animation opacity bug
 const homePageOpacity = computed(() => {
   if (route.name == "index") {
@@ -67,13 +75,17 @@ a:focus {
   position: absolute;
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   bottom: 0;
   left: 0;
   border-radius: 2rem;
   background-color: #303030;
   transform: scaleX(0);
   transition: transform 0.3s ease;
+}
+
+a.router-link-active::before {
+  transform: v-bind(showNavigation);
 }
 
 .normal-link:hover::before {
