@@ -47,7 +47,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
   background: var(--clr-neutral-400);
 }
 

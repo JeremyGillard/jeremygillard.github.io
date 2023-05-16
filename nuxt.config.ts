@@ -23,6 +23,10 @@ export default defineNuxtConfig({
           ]
         }
     },
+    routeRules: {
+      '/projects': { ssr: false },
+      '/notes': { ssr: false }
+    },
     googleFonts: {
       download: false,
       families: {
