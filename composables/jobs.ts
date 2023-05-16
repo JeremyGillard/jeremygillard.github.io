@@ -1,4 +1,4 @@
-import { Job } from "~~/utils/timelinetypes";
+import { Job } from "~~/utils/timeline";
 
 export async function useJobs() {
     let jobs = ref<Job[]>();
