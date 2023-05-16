@@ -1,5 +1,10 @@
 <template>
-  <section ref="section" class="timeline-section">
+  <section
+    :id="timelineSectioName(index)"
+    :class="timelineSectioName(index)"
+    ref="section"
+    class="timeline-section"
+  >
     <header>
       <h3>{{ title }}</h3>
       <div class="details">
@@ -8,43 +13,25 @@
     </header>
     <p>{{ description }}</p>
     <ul>
-      <TimelineTag
-        v-for="(tag, index) in tags"
-        :key="index"
-        :name="tag.name"
-        :category="tag.category"
-      />
+      <TimelineTag v-for="(tag, index) in tags" :key="index" :tag="tag" />
     </ul>
   </section>
 </template>
 
 <script setup lang="ts">
-import { Tag } from "~~/utils/timelinetypes";
+import {
+  Job,
+  formatDetails,
+  formatPeriod,
+  timelineSectioName,
+} from "~~/utils/timeline";
 
-const { startDate, endDate, company, contractType } = defineProps<{
-  title: string;
-  startDate: string;
-  endDate: string;
-  company: string;
-  contractType: string;
-  description: string;
-  tags: Tag[];
-}>();
+const { job, index } = defineProps<{ job: Job; index: number }>();
+const { title, startDate, endDate, company, contractType, description, tags } =
+  job;
 
-const period = computed(() => {
-  return `${startDate} - ${endDate}`;
-});
-
-const details = computed(() => {
-  let details = "";
-  if (company) {
-    details += `at ${company}`;
-  }
-  if (contractType) {
-    details += ` [${contractType}]`;
-  }
-  return details;
-});
+const period = computed(() => formatPeriod(startDate, endDate));
+const details = computed(() => formatDetails(company, contractType));
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -1,31 +1,15 @@
 <template>
   <li class="tag" :style="{ backgroundColor: tagColor }">
-    {{ name }}
+    {{ tag.name }}
   </li>
 </template>
 
 <script setup lang="ts">
-import { Category } from "~~/utils/timelinetypes";
+import { Tag, colorByCategory } from "~~/utils/timeline";
 
-const props = defineProps<{
-  name: string;
-  category: Category;
-}>();
+const { tag } = defineProps<{ tag: Tag }>();
 
-const tagColor = computed(() => {
-  switch (props.category) {
-    case Category.Language:
-      return "#ffd772";
-    case Category.Library:
-      return "#7299ff";
-    case Category.Tools:
-      return "#b072ff";
-    case Category.Field:
-      return "#72ddff";
-    default:
-      return "#DDDDDD";
-  }
-});
+const tagColor = computed(() => colorByCategory(tag.category));
 </script>
 
 <style scoped>
