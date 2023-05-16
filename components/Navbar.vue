@@ -30,6 +30,15 @@ const aboutHRef = computed(() => {
   }
   return "/";
 });
+
+// Due to gsap animation opacity bug
+const homePageOpacity = computed(() => {
+  if (route.name == "index") {
+    return 0;
+  } else {
+    return 1;
+  }
+});
 </script>
 
 <style scoped>
@@ -46,6 +55,7 @@ ul {
   position: relative;
   font-size: var(--fs-500);
   color: var(--clr-primary-400);
+  opacity: v-bind(homePageOpacity);
 }
 
 a:focus {
