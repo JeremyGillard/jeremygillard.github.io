@@ -1,9 +1,6 @@
 <template>
   <NuxtLayout>
-    <main class="content">
-      <h1>Notes</h1>
-      <div></div>
-    </main>
+    <main class="content"></main>
   </NuxtLayout>
 </template>
 
