@@ -62,11 +62,11 @@ header {
 }
 
 .hero-anchor-layout {
-  height: 80vh;
+  /* border: solid 1px black; */
+  height: 76vh;
 }
 
 svg {
-  /* border: solid 1px black; */
   position: fixed;
   left: 0;
   transform: translateY(-6px);
