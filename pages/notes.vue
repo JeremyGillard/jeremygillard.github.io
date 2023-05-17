@@ -91,6 +91,5 @@ img {
   background-color: rgb(224, 224, 224);
   width: 100%;
   height: 20vh;
-  onerror: none;
 }
 </style>
