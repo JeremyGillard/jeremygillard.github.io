@@ -9,6 +9,7 @@ projects, about, notes (blog)
 ## Projects
 
 This page will contain links to possible pro projects and links to the repos of my personal projects on github (api github).
+Create a REPO to present the project (ex: Fluent) and then have 2 other repos referencing backend and frontend code (ex: Fluent Backend / Fluent Frontend).
 
 ## About
 
