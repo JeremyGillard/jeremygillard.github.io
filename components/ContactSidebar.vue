@@ -22,7 +22,7 @@
           label="Mail"
           type="fa-solid"
           id="fa-envelope"
-          url="mailto:gillard.jeremy@outlook.fr"
+          url="mailto:gillard.jeremy@outlook.fr?subject=Mail from jeremygillard.github.io"
         />
       </li>
     </ul>
