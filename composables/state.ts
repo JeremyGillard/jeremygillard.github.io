@@ -1,1 +1,1 @@
-export const useHomeRoute = () => useState<string>(() => '/#title');
+export const useHomeRoute = () => useState<string>(() => '/#timeline-anchor-layout');
