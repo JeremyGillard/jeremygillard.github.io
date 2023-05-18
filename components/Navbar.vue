@@ -7,7 +7,11 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink class="navlink normal-link cta" :to="aboutHRef">
+        <NuxtLink
+          @click.native="toggleHomeRoute"
+          class="navlink normal-link cta"
+          :to="homeRoute"
+        >
           About
         </NuxtLink>
       </li>
@@ -19,17 +23,17 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
-const aboutHRef = computed(() => {
-  if (route.name == "index") {
-    if (route.fullPath == "/#timeline-anchor-layout") {
-      return "/";
-    } else {
-      return "#timeline-anchor-layout";
-    }
+const homeRoute = useHomeRoute();
+
+function toggleHomeRoute() {
+  if (homeRoute.value == "/#timeline-anchor-layout") {
+    homeRoute.value = "/";
+  } else {
+    homeRoute.value = "/#timeline-anchor-layout";
   }
-  return "/";
-});
+}
+
+const route = useRoute();
 
 const showNavigation = computed(() => {
   if (route.fullPath == "/") {
