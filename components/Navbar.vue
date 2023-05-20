@@ -44,13 +44,13 @@ const showNavigation = computed(() => {
 });
 
 // Due to gsap animation opacity bug
-const homePageOpacity = computed(() => {
-  if (route.name == "index") {
-    return 0;
-  } else {
-    return 1;
-  }
-});
+// const homePageOpacity = computed(() => {
+//   if (route.name == "index") {
+//     return 0;
+//   } else {
+//     return 1;
+//   }
+// });
 </script>
 
 <style scoped>
@@ -76,7 +76,7 @@ li:nth-child(3) {
   position: relative;
   font-size: var(--fs-500);
   color: var(--clr-primary-400);
-  opacity: v-bind(homePageOpacity);
+  /* opacity: v-bind(homePageOpacity); */
 }
 
 a:focus {
