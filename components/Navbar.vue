@@ -8,9 +8,9 @@
       </li>
       <li>
         <NuxtLink
-          @click.native="toggleHomeRoute"
+          @click.native="toggleIndexRoute"
           class="navlink normal-link cta"
-          :to="homeRoute"
+          :to="indexRoute"
         >
           About
         </NuxtLink>
@@ -23,13 +23,13 @@
 </template>
 
 <script setup lang="ts">
-const homeRoute = useHomeRoute();
+const indexRoute = useIndexRoute();
 
-function toggleHomeRoute() {
-  if (homeRoute.value == "/#timeline-anchor-layout") {
-    homeRoute.value = "/";
+function toggleIndexRoute() {
+  if (indexRoute.value == "/#about") {
+    indexRoute.value = "/";
   } else {
-    homeRoute.value = "/#timeline-anchor-layout";
+    indexRoute.value = "/#about";
   }
 }
 
