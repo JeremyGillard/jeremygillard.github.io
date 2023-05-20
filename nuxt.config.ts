@@ -23,6 +23,9 @@ export default defineNuxtConfig({
           ]
         }
     },
+    css: [
+        '@/assets/css/global.css'
+    ],
     routeRules: {
       '/projects': { ssr: false },
       '/notes': { ssr: false }
