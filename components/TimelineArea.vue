@@ -1,9 +1,6 @@
 <template>
   <div ref="area" class="timeline-area">
-    <section
-      id="timeline-anchor-layout"
-      class="timeline-anchor-layout"
-    ></section>
+    <div id="about" class="about"></div>
     <TimelineSection
       v-for="(job, index) in jobs"
       :key="index"
