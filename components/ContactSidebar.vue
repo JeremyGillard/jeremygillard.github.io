@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <ul>
-      <li class="link0">
+      <li class="sidebar-link">
         <ContactButton
           label="GitHub"
           type="fa-brands"
@@ -9,7 +9,7 @@
           url="https://github.com/JeremyGillard"
         />
       </li>
-      <li class="link1">
+      <li class="sidebar-link">
         <ContactButton
           label="LinkedIn"
           type="fa-brands"
@@ -17,7 +17,7 @@
           url="https://www.linkedin.com/in/jeremy-gillard/"
         />
       </li>
-      <li class="link2">
+      <li class="sidebar-link">
         <ContactButton
           label="Mail"
           type="fa-solid"
@@ -44,31 +44,5 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 64px;
-}
-
-.link0 {
-  animation-delay: 5s;
-}
-.link1 {
-  animation-delay: 5.2s;
-}
-.link2 {
-  animation-delay: 5.4s;
-}
-
-li {
-  animation-name: appear;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: backwards;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 </style>

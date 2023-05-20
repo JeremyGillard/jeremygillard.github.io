@@ -21,7 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import { Power4, gsap } from "gsap";
+import { gsap } from "gsap";
+const route = useRoute();
 const name = ref<HTMLHeadingElement>();
 const svg = ref<SVGSVGElement>();
 const line = ref<SVGElement>();
@@ -35,15 +36,48 @@ onMounted(() => {
   line.value!.setAttribute("stroke-dasharray", `${lineLength}`);
   line.value!.setAttribute("stroke-dashoffset", `${lineLength}`);
 
+  const navlinkTween = gsap.from(".navlink", {
+    opacity: 0,
+    delay: 2.8,
+    duration: 0.8,
+    ease: "power1.in",
+    stagger: 0.2,
+  });
+
+  const sidebarTween = gsap.from(".sidebar-link", {
+    opacity: 0,
+    duration: 0.8,
+    ease: "power1.in",
+    stagger: 0.2,
+  });
+
+  // TODO: avoir une méthode sur le composant .animate
+  const nameTween = gsap.from(".name", {
+    y: 60,
+    duration: 0.6,
+    ease: "power4.out",
+  });
+
+  const titleTween = gsap.from(".title", {
+    y: -40,
+    duration: 0.6,
+    ease: "power4.out",
+  });
+
   let tl = gsap.timeline();
-  tl.set(".navlink", { opacity: 0 });
   tl.set(".line", { opacity: 1 });
   tl.to(".line", { strokeDashoffset: 0, duration: 0.8 });
-  tl.to(".name", { top: 0, duration: 0.6, ease: Power4.easeOut });
-  tl.to(".title", { bottom: 0, duration: 0.6, ease: Power4.easeOut });
+  tl.add(nameTween);
+  tl.add(titleTween);
   tl.to(".line", { strokeDashoffset: -lineLength, duration: 0.6 }, 1.8);
   tl.set(".line", { opacity: 0 });
-  tl.to(".navlink", { opacity: 1, duration: 1, delay: 2.8, stagger: 0.2 });
+  tl.add(navlinkTween);
+  tl.add(sidebarTween, "-=1");
+  tl.addLabel("end");
+
+  if (route.fullPath == "/#about") {
+    tl.play("end");
+  }
 });
 </script>
 
@@ -84,24 +118,19 @@ svg {
 
 .mask {
   overflow: hidden;
-  /* border: solid 1px blue; */
 }
 
 .name {
-  position: relative;
-  top: calc(var(--fs-800) + 1rem);
   font-weight: 500;
   font-size: var(--fs-800);
 }
 
 .title {
-  position: relative;
-  bottom: calc(var(--fs-700) + 1rem);
   font-weight: 500;
   font-size: var(--fs-700);
   letter-spacing: 0.2rem;
   word-spacing: 0.4rem;
   overflow: hidden;
-  margin-top: 0.6rem;
+  margin-top: 0.2rem;
 }
 </style>

@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-onMounted(async () => {
-  await navigateTo("/");
-});
+// onMounted(async () => {
+//   await navigateTo("/");
+// });
 </script>
