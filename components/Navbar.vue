@@ -62,6 +62,15 @@ ul {
   align-items: center;
   background: var(--clr-neutral-400);
 }
+li {
+  min-width: 6rem;
+}
+li:nth-child(2) {
+  text-align: center;
+}
+li:nth-child(3) {
+  text-align: right;
+}
 
 .navlink {
   position: relative;
