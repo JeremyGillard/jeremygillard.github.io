@@ -22,6 +22,7 @@
 
 <script setup lang="ts">
 import { gsap } from "gsap";
+const route = useRoute();
 const name = ref<HTMLHeadingElement>();
 const svg = ref<SVGSVGElement>();
 const line = ref<SVGElement>();
@@ -72,6 +73,11 @@ onMounted(() => {
   tl.set(".line", { opacity: 0 });
   tl.add(navlinkTween);
   tl.add(sidebarTween, "-=1");
+  tl.addLabel("end");
+
+  if (route.fullPath == "/#about") {
+    tl.play("end");
+  }
 });
 </script>
 
