@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <IdeaNotes />
+    <InProgress>Notes</InProgress>
   </NuxtLayout>
 </template>
 

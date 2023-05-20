@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <IdeaProjects />
+    <InProgress>Projects</InProgress>
   </NuxtLayout>
 </template>
 
