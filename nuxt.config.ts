@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
   fonts: {
-    families: [{ name: "Bruno Ace", provider: "google", weights: [400], global: true }],
+    families: [
+      { name: "Bruno Ace", provider: "google", weights: [400], global: true },
+      { name: "Inter", provider: "google", weights: [400, 500, 600], global: true },
+    ],
   },
 });
