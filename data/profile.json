@@ -1,0 +1,338 @@
+{
+  "basics": {
+    "name": "Jeremy Gillard",
+    "headline": "DevSecOps Engineer",
+    "location": "Belgium",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/JeremyGillard" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jeremygillard" }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I'm very interested in building web software with a holistic approach.",
+      "My past experience has given me a considerable amount of knowledge about maintaining an on-site infrastructure (both from a network point of view and in terms of Windows and Linux system administration).",
+      "I also have substantial experience in both backend and frontend development, and have recently had the opportunity to set up advanced CI/CD automation systems.",
+      "All this makes me a good generalist. I'd now like to specialize, as it's difficult to claim to be both a good generalist and an expert at the same time, with my few years of experience."
+    ],
+    "focus": {
+      "intro": "Here are a few technologies for which I already have skills, and which I'd very much like to develop further:",
+      "items": [
+        {
+          "area": "Development",
+          "details": "Elixir (Phoenix), Typescript (Vue.js, Node.js), C# (.Net 8) or Python"
+        },
+        {
+          "area": "DevOps",
+          "details": "GitLab/GitHub, Docker, K8S, Helm, ArgoCD, Ansible, Terraform, Proxmox"
+        },
+        {
+          "area": "Cloud",
+          "details": "Azure (I already have a fundamental certification [az900] and I'm currently working on administrator [az104] and iam administrator [sc300] certifications)"
+        },
+        {
+          "area": "CyberSec",
+          "details": "to ensure that I can deploy in total security whether on site or in the cloud (OWASP, NIS2)"
+        }
+      ]
+    },
+    "closing": "If my profile interests you, feel free to reach out here on LinkedIn. I'll be happy to share experiences about all this topics with you."
+  },
+  "skills": [
+    { "id": "typescript", "name": "TypeScript", "category": "language" },
+    { "id": "javascript", "name": "JavaScript", "category": "language" },
+    { "id": "python", "name": "Python", "category": "language" },
+    { "id": "csharp", "name": "C#", "category": "language" },
+    { "id": "elixir", "name": "Elixir", "category": "language" },
+    { "id": "cpp", "name": "C++", "category": "language" },
+    { "id": "r", "name": "R", "category": "language" },
+    { "id": "bash", "name": "Bash", "category": "language" },
+    { "id": "powershell", "name": "PowerShell", "category": "language" },
+    { "id": "sql", "name": "SQL", "category": "language" },
+    { "id": "html", "name": "HTML", "category": "language" },
+    { "id": "css", "name": "CSS", "category": "language" },
+
+    { "id": "nodejs", "name": "Node.js", "category": "framework" },
+    { "id": "phoenix", "name": "Phoenix", "category": "framework" },
+    { "id": "dotnet-core", "name": ".NET Core", "category": "framework" },
+    { "id": "joomla", "name": "Joomla", "category": "framework" },
+
+    { "id": "pytorch", "name": "PyTorch", "category": "library" },
+    { "id": "scikit-learn", "name": "Scikit-learn", "category": "library" },
+    { "id": "numpy", "name": "Numpy", "category": "library" },
+    { "id": "scipy", "name": "Scipy", "category": "library" },
+    { "id": "pandas", "name": "Pandas", "category": "library" },
+    { "id": "matplotlib", "name": "Matplotlib", "category": "library" },
+    { "id": "skimage", "name": "Skimage", "category": "library" },
+    { "id": "pydicom", "name": "Pydicom", "category": "library" },
+
+    { "id": "kubernetes", "name": "Kubernetes", "category": "devops" },
+    { "id": "helm", "name": "Helm", "category": "devops" },
+    { "id": "argocd", "name": "ArgoCD", "category": "devops" },
+    { "id": "docker", "name": "Docker", "category": "devops" },
+    { "id": "podman", "name": "Podman", "category": "devops" },
+    { "id": "ansible", "name": "Ansible", "category": "devops" },
+    { "id": "terraform", "name": "Terraform", "category": "devops" },
+    { "id": "gitlab", "name": "GitLab", "category": "devops" },
+    { "id": "github", "name": "GitHub", "category": "devops" },
+    { "id": "jenkins", "name": "Jenkins", "category": "devops" },
+    { "id": "bitbucket", "name": "Bitbucket", "category": "devops" },
+    { "id": "git", "name": "Git", "category": "devops" },
+    { "id": "rabbitmq", "name": "RabbitMQ", "category": "devops" },
+
+    { "id": "gcp", "name": "Google Cloud Platform (GCP)", "category": "cloud" },
+    { "id": "gke", "name": "Google Kubernetes Engine (GKE)", "category": "cloud" },
+    { "id": "azure", "name": "Microsoft Azure", "category": "cloud" },
+
+    { "id": "prometheus", "name": "Prometheus", "category": "observability" },
+    { "id": "alertmanager", "name": "AlertManager", "category": "observability" },
+    { "id": "grafana", "name": "Grafana", "category": "observability" },
+    { "id": "grafana-loki", "name": "Grafana Loki", "category": "observability" },
+    { "id": "elk", "name": "Elastic Stack (ELK)", "category": "observability" },
+    { "id": "zabbix", "name": "Zabbix", "category": "observability" },
+    { "id": "prtg", "name": "Paessler PRTG", "category": "observability" },
+
+    { "id": "keycloak", "name": "Keycloak", "category": "security" },
+    { "id": "oauth", "name": "OAuth", "category": "security" },
+    { "id": "oauth2-1", "name": "OAuth2.1", "category": "security" },
+    { "id": "oidc", "name": "OIDC", "category": "security" },
+    { "id": "pki", "name": "PKI", "category": "security" },
+    { "id": "aikido", "name": "Aikido", "category": "security" },
+    { "id": "nessus", "name": "Nessus", "category": "security" },
+    { "id": "eset", "name": "ESET", "category": "security" },
+    { "id": "firewall", "name": "Firewall", "category": "security" },
+    { "id": "dkim", "name": "DKIM", "category": "security" },
+    { "id": "dmarc", "name": "DMARC", "category": "security" },
+
+    { "id": "vlan", "name": "VLAN", "category": "network" },
+    { "id": "switch", "name": "Switch", "category": "network" },
+    { "id": "dns", "name": "DNS", "category": "network" },
+    { "id": "dhcp", "name": "DHCP", "category": "network" },
+    { "id": "vpn", "name": "VPN", "category": "network" },
+    { "id": "radius", "name": "Radius", "category": "network" },
+    { "id": "wpa2-enterprise", "name": "WPA2 Enterprise", "category": "network" },
+    { "id": "wpa3", "name": "WPA3", "category": "network" },
+
+    { "id": "linux-server", "name": "Linux Server", "category": "systems" },
+    { "id": "linux-sysadmin", "name": "Linux System Administration", "category": "systems" },
+    { "id": "windows-server", "name": "Windows Server", "category": "systems" },
+    { "id": "active-directory", "name": "Active Directory", "category": "systems" },
+    { "id": "exchange", "name": "Microsoft Exchange", "category": "systems" },
+    { "id": "hyper-v", "name": "Hyper-V", "category": "systems" },
+    { "id": "proxmox", "name": "Proxmox", "category": "systems" },
+    { "id": "synology", "name": "Synology", "category": "systems" },
+    { "id": "backups-management", "name": "Backups Management", "category": "systems" },
+    { "id": "nginx", "name": "Nginx", "category": "systems" },
+    { "id": "apache", "name": "Apache", "category": "systems" },
+    { "id": "web-server", "name": "Web Server", "category": "systems" },
+
+    { "id": "postgresql", "name": "PostgreSQL", "category": "database" },
+    { "id": "postgrest", "name": "PostgREST", "category": "database" },
+    { "id": "mysql", "name": "MySQL", "category": "database" },
+    { "id": "mariadb", "name": "MariaDB", "category": "database" },
+    { "id": "mongodb", "name": "MongoDB", "category": "database" },
+    { "id": "nosql", "name": "NoSQL", "category": "database" },
+
+    { "id": "claude-code", "name": "Claude Code", "category": "tool" },
+    { "id": "jupyter", "name": "Jupyter Notebook", "category": "tool" },
+    { "id": "figma", "name": "Figma", "category": "tool" },
+    { "id": "jira", "name": "JIRA", "category": "tool" },
+
+    { "id": "software-development", "name": "Software Development", "category": "practice" },
+    { "id": "oop", "name": "Object-Oriented Programming (OOP)", "category": "practice" },
+    { "id": "algorithms", "name": "Algorithms", "category": "practice" },
+    { "id": "automation", "name": "Automation", "category": "practice" },
+    { "id": "data-science", "name": "Data Science", "category": "practice" },
+    { "id": "computer-vision", "name": "Computer Vision", "category": "practice" }
+  ],
+  "experience": [
+    {
+      "id": "eeas-devsecops",
+      "title": "DevSecOps Engineer",
+      "company": "European External Action Service",
+      "employmentType": "freelance",
+      "location": "Brussels Metropolitan Area",
+      "workplace": "hybrid",
+      "start": "2026-06",
+      "end": null,
+      "description": [],
+      "skills": []
+    },
+    {
+      "id": "enspirit-freelance",
+      "title": "DevOps Engineer & Software Developer",
+      "company": "Enspirit",
+      "employmentType": "freelance",
+      "location": "Belgium",
+      "workplace": "remote",
+      "start": "2025-04",
+      "end": "2026-07",
+      "description": [],
+      "skills": ["docker", "gitlab"]
+    },
+    {
+      "id": "enspirit-fulltime",
+      "title": "DevOps Engineer & Software Developer",
+      "company": "Enspirit",
+      "employmentType": "full-time",
+      "location": "Belgium",
+      "workplace": "remote",
+      "start": "2023-12",
+      "end": "2025-03",
+      "description": [
+        "Implemented a rest api scraper in Typescript/Node.js to collect and monitor information from several electronic equipment suppliers and developed a web interface on top of it in Elixir/Phoenix.",
+        "Migrated (from Jenkins) and started from scratch GitLab CI/CD pipeline systems with a self-hosted runner for multi-containers monorepo projects to help developers have important information about their test suites (unit, integration, e2e) as well as automatic deployment.",
+        "Managed the migration of services from a bare metal to a virtualized and containerized infrastructure, and set up security systems (IAM system with Active Directory, WiFi WPA2 & 3 Entreprise, VLANs, Backups, DRP)."
+      ],
+      "skills": [
+        "kubernetes",
+        "helm",
+        "argocd",
+        "docker",
+        "ansible",
+        "terraform",
+        "gitlab",
+        "github",
+        "jenkins",
+        "rabbitmq",
+        "gcp",
+        "gke",
+        "prometheus",
+        "alertmanager",
+        "grafana",
+        "grafana-loki",
+        "zabbix",
+        "keycloak",
+        "oauth2-1",
+        "oidc",
+        "pki",
+        "aikido",
+        "firewall",
+        "radius",
+        "vlan",
+        "switch",
+        "dns",
+        "linux-server",
+        "windows-server",
+        "active-directory",
+        "proxmox",
+        "nginx",
+        "postgresql",
+        "postgrest",
+        "typescript",
+        "nodejs",
+        "elixir",
+        "claude-code"
+      ]
+    },
+    {
+      "id": "ngroup-sysadmin",
+      "title": "System Administrator & C# Developer",
+      "company": "NGroup (Nostalgie, NRJ, Chérie, Nostalgie+)",
+      "employmentType": "full-time",
+      "location": "Brussels Metropolitan Area",
+      "workplace": "on-site",
+      "start": "2021-04",
+      "end": "2023-06",
+      "description": [
+        "Maintained and managed the company's internal IT equipment, with a focus on cybersecurity.",
+        "Developed a software (C#, .NET 6, PowerShell) to regularly monitor the status of the company's servers backups by interfacing the native PowerShell module provided by Windows Server Backup, using WS-Management protocol, and creating a weekly html email table with the help of razor template builder."
+      ],
+      "skills": []
+    },
+    {
+      "id": "uclouvain-coactions",
+      "title": "Frontend Developer & R Developer",
+      "company": "UCLouvain - Université catholique de Louvain",
+      "team": "CoActions Lab",
+      "employmentType": "part-time",
+      "location": "Brussels, Brussels-Capital Region, Belgium",
+      "workplace": "hybrid",
+      "start": "2019-10",
+      "end": "2021-01",
+      "description": [
+        "I was mainly involved in CoActions Lab website maintainance (changing style and layout of some pages and adding new content). https://www.coactionslab.com/",
+        "At the end of this contract, I was given the task of writing a small software program in R language for one of the laboratory's collaborators. Its aim is to facilitate the graphical representation of somatotopy data. R package (Somar): https://github.com/JeremyGillard/somar"
+      ],
+      "skills": ["figma", "css", "html", "r", "joomla"]
+    },
+    {
+      "id": "iut-cobra",
+      "title": "Python Developer & Data Engineer",
+      "company": "IUT (Institut Universitaire de Technologie)",
+      "employmentType": "internship",
+      "location": "Villeneuve-d'Ascq, Hauts-de-France, France",
+      "workplace": "hybrid",
+      "start": "2020-02",
+      "end": "2020-05",
+      "description": [
+        "I've worked on CoBra project: https://cobra-2seas.eu/",
+        "CoBra project aims to improve quality of both diagnosis and treatment of localized cancers, by developing a new medical robot prototype for brachytherapy and biopsy under guidance of MRI.",
+        "My first objective in this project was to gather and experiment the different image detection techniques (Machine leaning & Deep learning) existing at the time, that could be well suited to needle detection in an MRI image.",
+        "Because the project was still in its infancy at the time, I also and above all contributed to setting up MRI image processing pipelines with python and its libraries."
+      ],
+      "skills": [
+        "python",
+        "docker",
+        "gitlab",
+        "git",
+        "pytorch",
+        "pydicom",
+        "jupyter",
+        "skimage",
+        "pandas",
+        "scipy",
+        "numpy",
+        "matplotlib",
+        "scikit-learn"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cka",
+      "name": "CKA: Certified Kubernetes Administrator",
+      "issuer": "The Linux Foundation",
+      "issued": "2026-03",
+      "expires": "2028-03",
+      "url": "https://www.credly.com/badges/79806d2d-63b7-495f-814c-7a576d40e2ec",
+      "skills": ["kubernetes"]
+    },
+    {
+      "id": "ckad",
+      "name": "CKAD: Certified Kubernetes Application Developer",
+      "issuer": "The Linux Foundation",
+      "issued": "2026-02",
+      "expires": "2028-02",
+      "url": "https://www.credly.com/badges/af9d9c6f-f98b-4dd9-a83e-ba36ec472b24",
+      "skills": ["kubernetes"]
+    },
+    {
+      "id": "kcsa",
+      "name": "KCSA: Kubernetes and Cloud Native Security Associate",
+      "issuer": "The Linux Foundation",
+      "issued": "2026-01",
+      "expires": "2028-01",
+      "url": "https://www.credly.com/badges/7dc9c272-79af-461b-b924-32f89bfdaf6a",
+      "skills": ["kubernetes"]
+    },
+    {
+      "id": "kcna",
+      "name": "KCNA: Kubernetes and Cloud Native Associate",
+      "issuer": "The Linux Foundation",
+      "issued": "2026-01",
+      "expires": "2028-01",
+      "url": "https://www.credly.com/badges/beb4d3f3-db27-4ac7-a3f5-7b3f9b83929b",
+      "skills": ["kubernetes"]
+    },
+    {
+      "id": "az-900",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "issued": "2023-10",
+      "credentialId": "A0BC9CED1B67AB1",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/JeremyGillard-9778/A0BC9CED1B67AB1",
+      "skills": ["azure"]
+    }
+  ]
+}
