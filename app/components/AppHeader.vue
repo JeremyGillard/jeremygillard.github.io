@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <NuxtLink to="/" class="name">Gils.Studio</NuxtLink>
+    <NuxtLink to="/" class="name">Jeremy Gillard</NuxtLink>
     <div class="actions">
       <ThemeSwitch />
       <span class="divider" aria-hidden="true" />

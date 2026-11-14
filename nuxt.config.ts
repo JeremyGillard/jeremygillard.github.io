@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [
-      { name: "Bruno Ace", provider: "google", weights: [400], global: true },
+      { name: "Michroma", provider: "google", weights: [400], global: true },
       { name: "Inter", provider: "google", weights: [400, 500, 600], global: true },
     ],
   },
