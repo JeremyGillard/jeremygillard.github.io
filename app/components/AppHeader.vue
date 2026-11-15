@@ -14,6 +14,7 @@ const icons: Record<string, string> = {
   <header class="header">
     <NuxtLink to="/" class="name">{{ basics.name }}</NuxtLink>
     <div class="actions">
+      <NuxtLink to="/resume" class="nav-link">Resume</NuxtLink>
       <ThemeSwitch />
       <span class="divider" aria-hidden="true" />
       <a
@@ -63,6 +64,25 @@ const icons: Record<string, string> = {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.nav-link {
+  margin-right: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover {
+    color: var(--text-h);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 }
 
 .divider {

@@ -22,6 +22,8 @@ onMounted(() => {
   contactPrivate.value = window.__RESUME_PRIVATE__ ?? {};
   ready.value = true;
 });
+const print = () => window.print();
+
 const contact = computed(() =>
   [resume.location, contactPrivate.value.email, contactPrivate.value.phone, resume.linkedin]
     .filter(Boolean)
@@ -43,6 +45,12 @@ html, body { background: #e9e9ec !important; color-scheme: light; }
 </script>
 
 <template>
+  <!-- Screen only: hidden when printing and in the generated PDF. -->
+  <nav class="toolbar" aria-label="Resume">
+    <NuxtLink to="/" class="tool">← Back to site</NuxtLink>
+    <button type="button" class="tool primary" @click="print">Print / Save as PDF</button>
+  </nav>
+
   <article class="resume" :class="resume.paper" :data-ready="ready || undefined">
     <header>
       <h1 class="name">{{ resume.name }}</h1>
@@ -66,7 +74,7 @@ html, body { background: #e9e9ec !important; color-scheme: light; }
           >{{ job.city ? `, ${job.city}` : "" }} - <strong class="title">{{ job.title }}</strong>
           <template v-for="tag in job.tags" :key="tag"> - {{ tag }}</template>
         </p>
-        <ul>
+        <ul v-if="job.bullets.length">
           <li v-for="(bullet, i) in job.bullets" :key="i">{{ bullet }}</li>
         </ul>
       </div>
@@ -82,6 +90,68 @@ html, body { background: #e9e9ec !important; color-scheme: light; }
 </template>
 
 <style scoped>
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 8.5in;
+  margin: 24px auto 0;
+  padding: 0 4px;
+  font-family: var(--sans);
+
+  @media print {
+    display: none;
+  }
+}
+
+.tool {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid #d4d4d8;
+  border-radius: 999px;
+  background: #fff;
+  font: inherit;
+  font-size: 0.875rem;
+  color: #18181b;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s ease-out;
+
+  &:hover {
+    background: #f4f4f5;
+  }
+
+  /* Feedback on press, not release */
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #1f4e79;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+.primary {
+  border-color: #1f4e79;
+  background: #1f4e79;
+  color: #fff;
+
+  &:hover {
+    background: #193f62;
+  }
+}
+
 /* Mirrors the original Google Docs resume: Roboto, navy headings, grey dates. */
 .resume {
   --ink: #000;
@@ -91,7 +161,7 @@ html, body { background: #e9e9ec !important; color-scheme: light; }
   box-sizing: border-box;
   width: 8.5in;
   min-height: 11in;
-  margin: 24px auto;
+  margin: 16px auto 24px;
   padding: 0.5in 0.85in;
   background: #fff;
   color: var(--ink);

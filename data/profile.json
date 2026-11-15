@@ -136,7 +136,6 @@
 
     { "id": "keycloak", "name": "Keycloak", "category": "security" },
     { "id": "oauth", "name": "OAuth", "category": "security" },
-    { "id": "oauth2-1", "name": "OAuth2.1", "category": "security" },
     { "id": "oidc", "name": "OIDC", "category": "security" },
     { "id": "pki", "name": "PKI", "category": "security" },
     { "id": "aikido", "name": "Aikido", "category": "security" },
@@ -282,7 +281,7 @@
         "grafana-loki",
         "zabbix",
         "keycloak",
-        "oauth2-1",
+        "oauth",
         "oidc",
         "pki",
         "aikido",

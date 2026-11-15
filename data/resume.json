@@ -28,7 +28,7 @@
     { "id": "active-directory", "label": "Active Directory (DS, CS, FS)" },
     "pki",
     "radius",
-    "oauth2-1",
+    "oauth",
     "mariadb",
     "mongodb",
     "owasp",
@@ -41,6 +41,13 @@
     "wpa3"
   ],
   "experience": [
+    {
+      "roles": ["eeas-devsecops"],
+      "company": "EEAS",
+      "city": "Brussels",
+      "workplace": "Hybrid",
+      "note": "Freelance"
+    },
     {
       "roles": ["enspirit-fulltime", "enspirit-freelance"],
       "company": "Enspirit",

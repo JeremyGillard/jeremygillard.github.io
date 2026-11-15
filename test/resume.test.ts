@@ -8,6 +8,7 @@ import { buildResume } from "../shared/utils/resume";
 const profile = profileJson as Profile;
 const resume = resumeJson as Resume;
 const view = buildResume(profile, resume, "2026-11");
+const job = (company: string) => view.experience.find((e) => e.company === company)!;
 
 describe("data/resume.json", () => {
   it("only references existing profile entries", () => {
@@ -23,17 +24,22 @@ describe("data/resume.json", () => {
 
 describe("buildResume", () => {
   it("merges roles into one entry spanning all of them", () => {
-    const enspirit = view.experience[0]!;
+    const enspirit = job("Enspirit");
     expect(enspirit.period).toBe("Dec 2023 - Jul 2026");
     expect(enspirit.duration).toBe("2 years 8 months");
     expect(enspirit.title).toBe("DevOps Engineer & Software Developer");
   });
 
+  it("computes ongoing roles up to now", () => {
+    expect(job("EEAS").period).toBe("Jun 2026 - PRESENT");
+    expect(job("EEAS").duration).toBe("6 months");
+  });
+
   it("applies label and title overrides", () => {
     expect(view.skills).toContain("C# (.NET Core 8, REST Api)");
     expect(view.skills).toContain("Kubernetes");
-    expect(view.experience[1]!.title).toBe("System Administrator");
-    expect(view.experience[3]!.tags).toEqual(["Hybrid", "Student job"]);
+    expect(job("NGroup").title).toBe("System Administrator");
+    expect(job("UCLouvain").tags).toEqual(["Hybrid", "Student job"]);
   });
 
   it("builds education and certification lines", () => {
