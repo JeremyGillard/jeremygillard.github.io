@@ -21,7 +21,7 @@ const current = experience.find((e) => e.end === null);
 
       <ul class="certs" aria-label="Certifications">
         <li v-for="cert in certifications" :key="cert.id">
-          <a class="cert" href="#certifications" :title="cert.name">
+          <a class="cert" :href="`#cert-${cert.id}`" :title="cert.name">
             <!-- ids are the official exam codes (cka, az-900…) -->
             {{ cert.id.toUpperCase() }}
           </a>
