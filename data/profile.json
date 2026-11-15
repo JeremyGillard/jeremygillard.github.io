@@ -67,6 +67,7 @@
       "aliases": [".net", "dotnet"]
     },
     { "id": "joomla", "name": "Joomla", "category": "framework" },
+    { "id": "nuxt", "name": "Nuxt", "category": "framework", "aliases": ["nuxt.js", "nuxtjs"] },
 
     { "id": "pytorch", "name": "PyTorch", "category": "library" },
     { "id": "scikit-learn", "name": "Scikit-learn", "category": "library" },
@@ -202,6 +203,7 @@
     { "id": "claude-code", "name": "Claude Code", "category": "tool" },
     { "id": "jupyter", "name": "Jupyter Notebook", "category": "tool" },
     { "id": "figma", "name": "Figma", "category": "tool" },
+    { "id": "vite-plus", "name": "Vite+", "category": "tool", "aliases": ["viteplus", "vite"] },
     { "id": "jira", "name": "JIRA", "category": "tool" },
 
     { "id": "software-development", "name": "Software Development", "category": "practice" },
@@ -389,6 +391,16 @@
         "matplotlib",
         "scikit-learn"
       ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "personal-website",
+      "name": "Personal website",
+      "description": "This site: Nuxt static site with skill search and a generated PDF resume, deployed to GitHub Pages via GitHub Actions.",
+      "repo": "https://github.com/JeremyGillard/jeremygillard.github.io",
+      "url": "https://jeremygillard.github.io",
+      "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "github", "git"]
     }
   ],
   "certifications": [

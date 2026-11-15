@@ -1,4 +1,4 @@
-/** Skill picked in the Skills section; Experience and Certifications highlight what uses it. */
+/** Skill picked in the Skills section; Experience, Projects and Certifications highlight what uses it. */
 export function useSkillSelection() {
   const selected = useState<string | null>("selected-skill", () => null);
 

@@ -125,7 +125,11 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onKey));
         class="usage"
         aria-live="polite"
       >
-        <template v-if="current.experience.length || current.certifications.length">
+        <template
+          v-if="
+            current.experience.length || current.projects.length || current.certifications.length
+          "
+        >
           <p class="usage-title">Used in</p>
           <ul class="usage-list">
             <li v-for="role in current.experience" :key="role.id">
@@ -133,6 +137,10 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onKey));
               <span class="where">
                 · {{ role.company }} · {{ formatPeriod(role.start, role.end) }}</span
               >
+            </li>
+            <li v-for="project in current.projects" :key="project.id">
+              <a :href="`#project-${project.id}`">{{ project.name }}</a>
+              <span class="where"> · personal project</span>
             </li>
             <li v-for="cert in current.certifications" :key="cert.id">
               <a :href="`#cert-${cert.id}`">{{ cert.name }}</a>
@@ -142,7 +150,7 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onKey));
             </li>
           </ul>
         </template>
-        <p v-else class="usage-empty">Not linked to a role or certification yet.</p>
+        <p v-else class="usage-empty">Not linked to a role, project or certification yet.</p>
         <button type="button" class="clear" @click="clear">Clear</button>
       </div>
     </div>

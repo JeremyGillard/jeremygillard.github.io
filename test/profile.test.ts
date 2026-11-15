@@ -14,6 +14,7 @@ describe("data/profile.json", () => {
   it("has unique ids", () => {
     expect(duplicates(profile.skills.map((s) => s.id))).toEqual([]);
     expect(duplicates(profile.experience.map((e) => e.id))).toEqual([]);
+    expect(duplicates(profile.projects.map((p) => p.id))).toEqual([]);
     expect(duplicates(profile.certifications.map((c) => c.id))).toEqual([]);
     expect(duplicates(profile.education.map((e) => e.id))).toEqual([]);
   });
@@ -21,6 +22,7 @@ describe("data/profile.json", () => {
   it("references only existing skills", () => {
     const refs = [
       ...profile.experience.flatMap((e) => e.skills.map((id) => `${e.id} -> ${id}`)),
+      ...profile.projects.flatMap((p) => p.skills.map((id) => `${p.id} -> ${id}`)),
       ...profile.certifications.flatMap((c) => (c.skills ?? []).map((id) => `${c.id} -> ${id}`)),
     ];
     expect(refs.filter((ref) => !skillIds.has(ref.split(" -> ")[1]!))).toEqual([]);
@@ -38,6 +40,7 @@ describe("data/profile.json", () => {
       if (c.issued) expect(c.issued, c.id).toMatch(yearMonth);
       if (c.expires) expect(c.expires, c.id).toMatch(yearMonth);
     }
+    for (const p of profile.projects) if (p.start) expect(p.start, p.id).toMatch(yearMonth);
     for (const e of profile.education) {
       expect(e.start, e.id).toMatch(yearMonth);
       expect(e.end, e.id).toMatch(yearMonth);

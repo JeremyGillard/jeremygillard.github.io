@@ -1,16 +1,25 @@
-import type { Certification, Experience, Profile, Skill, SkillCategory } from "../types/profile";
+import type {
+  Certification,
+  Experience,
+  Profile,
+  Project,
+  Skill,
+  SkillCategory,
+} from "../types/profile";
 
 export interface SkillUsage {
   experience: Experience[];
+  projects: Project[];
   certifications: Certification[];
 }
 
-/** For each skill id, the roles and certifications that reference it. */
+/** For each skill id, the roles, projects and certifications that reference it. */
 export function skillUsage(profile: Profile): Map<string, SkillUsage> {
   const usage = new Map<string, SkillUsage>(
-    profile.skills.map((s) => [s.id, { experience: [], certifications: [] }]),
+    profile.skills.map((s) => [s.id, { experience: [], projects: [], certifications: [] }]),
   );
   for (const e of profile.experience) for (const id of e.skills) usage.get(id)?.experience.push(e);
+  for (const p of profile.projects) for (const id of p.skills) usage.get(id)?.projects.push(p);
   for (const c of profile.certifications)
     for (const id of c.skills ?? []) usage.get(id)?.certifications.push(c);
   return usage;

@@ -86,11 +86,26 @@ export interface Certification {
   skills?: string[];
 }
 
+/** Personal project or repository. */
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  /** Source repository. */
+  repo?: string;
+  /** Live site or demo. */
+  url?: string;
+  start?: YearMonth;
+  /** Skill ids from `skills`. */
+  skills: string[];
+}
+
 export interface Profile {
   basics: Basics;
   about: About;
   skills: Skill[];
   experience: Experience[];
+  projects: Project[];
   certifications: Certification[];
   education: Education[];
 }
