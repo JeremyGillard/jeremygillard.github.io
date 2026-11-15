@@ -57,6 +57,8 @@
     { "id": "sql", "name": "SQL", "category": "language" },
     { "id": "html", "name": "HTML", "category": "language" },
     { "id": "css", "name": "CSS", "category": "language" },
+    { "id": "rust", "name": "Rust", "category": "language" },
+    { "id": "webassembly", "name": "WebAssembly", "category": "language", "aliases": ["wasm"] },
 
     { "id": "nodejs", "name": "Node.js", "category": "framework", "aliases": ["node"] },
     { "id": "phoenix", "name": "Phoenix", "category": "framework" },
@@ -68,6 +70,7 @@
     },
     { "id": "joomla", "name": "Joomla", "category": "framework" },
     { "id": "nuxt", "name": "Nuxt", "category": "framework", "aliases": ["nuxt.js", "nuxtjs"] },
+    { "id": "vue", "name": "Vue.js", "category": "framework", "aliases": ["vuejs", "vue3"] },
 
     { "id": "pytorch", "name": "PyTorch", "category": "library" },
     { "id": "scikit-learn", "name": "Scikit-learn", "category": "library" },
@@ -401,6 +404,14 @@
       "repo": "https://github.com/JeremyGillard/jeremygillard.github.io",
       "url": "https://jeremygillard.github.io",
       "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "github", "git"]
+    },
+    {
+      "id": "fivetwist",
+      "name": "Fivetwist",
+      "description": "Two-player strategy game for the browser and the terminal: rules written once in Rust, compiled to WebAssembly, with a Vue 3 web UI and a ratatui terminal UI.",
+      "repo": "https://github.com/JeremyGillard/fivetwist",
+      "url": "https://jeremygillard.github.io/fivetwist/",
+      "skills": ["rust", "webassembly", "vue", "typescript", "html", "css"]
     }
   ],
   "certifications": [
