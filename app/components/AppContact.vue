@@ -1,9 +1,6 @@
 <script setup lang="ts">
 const { profile } = useProfile();
 const { basics, about } = profile;
-
-/** "https://www.linkedin.com/in/jeremygillard" → "linkedin.com/in/jeremygillard" */
-const display = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
 </script>
 
 <template>
@@ -14,7 +11,7 @@ const display = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "").replace
       <li v-for="link in basics.links" :key="link.url">
         <a class="link" :href="link.url" target="_blank" rel="noopener">
           <span class="label">{{ link.label }}</span>
-          <span class="url">{{ display(link.url) }}</span>
+          <span class="url">{{ displayUrl(link.url) }}</span>
           <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true">
             <path
               d="M5 11 11 5M6 5h5v5"

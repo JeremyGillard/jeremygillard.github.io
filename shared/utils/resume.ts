@@ -2,6 +2,7 @@ import type { Profile, YearMonth } from "../types/profile";
 import type { Resume, ResumeView } from "../types/resume";
 import { formatMonth } from "./date";
 import { formatDuration } from "./experience";
+import { displayUrl } from "./url";
 
 function pick<T extends { id: string }>(items: T[], id: string, kind: string): T {
   const item = items.find((i) => i.id === id);
@@ -76,7 +77,10 @@ export function buildResume(profile: Profile, resume: Resume, now: YearMonth): R
     headline: resume.headline,
     location: resume.location,
     website: resume.website,
-    linkedin: profile.basics.links.find((l) => l.label === "LinkedIn")?.url,
+    linkedin: (() => {
+      const url = profile.basics.links.find((l) => l.label === "LinkedIn")?.url;
+      return url && displayUrl(url);
+    })(),
     summary: resume.summary,
     skills,
     experience,

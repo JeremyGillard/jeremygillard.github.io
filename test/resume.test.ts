@@ -35,8 +35,9 @@ describe("buildResume", () => {
     expect(job("EEAS").duration).toBe("6 months");
   });
 
-  it("passes the website through for the contact line", () => {
+  it("shows website and LinkedIn without protocol in the contact line", () => {
     expect(view.website).toBe("jeremygillard.github.io");
+    expect(view.linkedin).toBe("linkedin.com/in/jeremygillard");
   });
 
   it("applies label and title overrides", () => {
