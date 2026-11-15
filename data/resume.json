@@ -2,6 +2,7 @@
   "paper": "Letter",
   "headline": "DevSecOps Engineer",
   "location": "Brussels",
+  "website": "jeremygillard.github.io",
   "summary": "Over the past 3 years, I’ve specialized in DevSecOps engineering, building robust CI/CD pipelines (GitLab, ArgoCD) and leading infrastructure migrations to containerized and virtualized platforms (Kubernetes, Proxmox). Passionate about automation, security, and delivering scalable solutions that empower development teams. Versatile software operator with 5 years of experience in system administration across Windows and Linux environments and development (TypeScript, C#, Python, Elixir).",
   "skills": [
     { "id": "linux-server", "label": "Linux server" },

@@ -35,6 +35,10 @@ describe("buildResume", () => {
     expect(job("EEAS").duration).toBe("6 months");
   });
 
+  it("passes the website through for the contact line", () => {
+    expect(view.website).toBe("jeremygillard.github.io");
+  });
+
   it("applies label and title overrides", () => {
     expect(view.skills).toContain("C# (.NET Core 8, REST Api)");
     expect(view.skills).toContain("Kubernetes");

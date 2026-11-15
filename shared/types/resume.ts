@@ -27,6 +27,8 @@ export interface Resume {
   paper: "Letter" | "A4";
   headline: string;
   location: string;
+  /** Shown in the contact line, before LinkedIn. */
+  website?: string;
   summary: string;
   skills: ResumeSkill[];
   experience: ResumeExperience[];
@@ -40,6 +42,7 @@ export interface ResumeView {
   name: string;
   headline: string;
   location: string;
+  website?: string;
   linkedin?: string;
   summary: string;
   skills: string[];

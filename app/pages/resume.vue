@@ -25,7 +25,13 @@ onMounted(() => {
 const print = () => window.print();
 
 const contact = computed(() =>
-  [resume.location, contactPrivate.value.email, contactPrivate.value.phone, resume.linkedin]
+  [
+    resume.location,
+    contactPrivate.value.email,
+    contactPrivate.value.phone,
+    resume.website,
+    resume.linkedin,
+  ]
     .filter(Boolean)
     .join(" | "),
 );

@@ -75,6 +75,7 @@ export function buildResume(profile: Profile, resume: Resume, now: YearMonth): R
     name: profile.basics.name,
     headline: resume.headline,
     location: resume.location,
+    website: resume.website,
     linkedin: profile.basics.links.find((l) => l.label === "LinkedIn")?.url,
     summary: resume.summary,
     skills,
