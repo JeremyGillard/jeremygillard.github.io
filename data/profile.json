@@ -79,6 +79,7 @@
     { "id": "matplotlib", "name": "Matplotlib", "category": "library" },
     { "id": "skimage", "name": "Skimage", "category": "library" },
     { "id": "pydicom", "name": "Pydicom", "category": "library" },
+    { "id": "gsap", "name": "GSAP", "category": "library", "aliases": ["greensock"] },
 
     { "id": "kubernetes", "name": "Kubernetes", "category": "devops", "aliases": ["k8s"] },
     { "id": "helm", "name": "Helm", "category": "devops", "aliases": ["helm charts"] },
@@ -425,6 +426,13 @@
       "repo": "https://github.com/JeremyGillard/fivetwist",
       "url": "https://jeremygillard.github.io/fivetwist/",
       "skills": ["rust", "webassembly", "vue", "typescript", "html", "css"]
+    },
+    {
+      "id": "valentine-u",
+      "name": "Valentine U",
+      "description": "Website for the musician Valentine U: multilingual Nuxt site presenting the new EP, biography and visuals, with GSAP animations.",
+      "url": "https://valentine.u.gils.studio",
+      "skills": ["nuxt", "gsap", "typescript", "html", "css"]
     }
   ],
   "certifications": [
