@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import type { EmploymentType, Workplace } from "#shared/types/profile";
+import type { EmploymentType, Experience, Workplace } from "#shared/types/profile";
 
 const { profile, resolveSkills } = useProfile();
 const groups = groupByCompany(profile.experience);
+const { selected, dims } = useSkillSelection();
 
 const VISIBLE_SKILLS = 8;
 const expanded = ref(new Set<string>());
+/** First N skills, plus the selected skill if it's hidden past the cut. */
+function visibleSkills(role: Experience) {
+  const all = resolveSkills(role.skills);
+  if (expanded.value.has(role.id)) return all;
+  const shown = all.slice(0, VISIBLE_SKILLS);
+  const pick = all.find((s) => s.id === selected.value);
+  return pick && !shown.includes(pick) ? [...shown, pick] : shown;
+}
 function toggle(id: string) {
   const next = new Set(expanded.value);
   if (!next.delete(id)) next.add(id);
@@ -32,7 +41,13 @@ const workplace: Record<Workplace, string> = {
         <h3 class="company-name">{{ group.company }}</h3>
 
         <ol class="roles" :class="{ multi: group.roles.length > 1 }">
-          <li v-for="role in group.roles" :key="role.id" class="role">
+          <li
+            v-for="role in group.roles"
+            :id="role.id"
+            :key="role.id"
+            class="role"
+            :class="{ dimmed: dims(role.skills) }"
+          >
             <div class="role-head">
               <h4 class="title">{{ role.title }}</h4>
               <p class="period">
@@ -65,11 +80,10 @@ const workplace: Record<Workplace, string> = {
               :aria-label="`Skills used at ${group.company}`"
             >
               <li
-                v-for="skill in expanded.has(role.id)
-                  ? resolveSkills(role.skills)
-                  : resolveSkills(role.skills).slice(0, VISIBLE_SKILLS)"
+                v-for="skill in visibleSkills(role)"
                 :key="skill.id"
                 class="chip"
+                :class="{ match: skill.id === selected }"
               >
                 {{ skill.name }}
               </li>
@@ -112,6 +126,22 @@ ul {
   line-height: 1.6rem;
   letter-spacing: -0.01em;
   color: var(--text-h);
+}
+
+.role {
+  scroll-margin-top: 24px;
+  transition: opacity 0.2s;
+}
+
+/* A skill is selected in the Skills section and this role didn't use it. */
+.dimmed {
+  opacity: 0.35;
+}
+
+.chip.match {
+  color: var(--text-h);
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .roles {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { profile } = useProfile();
+const { dims } = useSkillSelection();
 const certifications = profile.certifications.toSorted((a, b) => b.issued.localeCompare(a.issued));
 
 /** "CKA: Certified Kubernetes Administrator" → "Certified Kubernetes Administrator"; the code is shown separately. */
@@ -9,7 +10,13 @@ const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
 <template>
   <AppSection id="certifications" title="Certifications">
     <ul class="list">
-      <li v-for="cert in certifications" :key="cert.id">
+      <li
+        v-for="cert in certifications"
+        :id="`cert-${cert.id}`"
+        :key="cert.id"
+        class="item"
+        :class="{ dimmed: dims(cert.skills) }"
+      >
         <component
           :is="cert.url ? 'a' : 'div'"
           class="cert"
@@ -52,6 +59,15 @@ const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--border);
+}
+
+.item {
+  scroll-margin-top: 24px;
+  transition: opacity 0.2s;
+}
+
+.dimmed {
+  opacity: 0.35;
 }
 
 .cert {

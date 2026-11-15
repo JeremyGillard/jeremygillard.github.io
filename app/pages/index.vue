@@ -3,4 +3,5 @@
   <AppAbout />
   <AppExperience />
   <AppCertifications />
+  <AppSkills />
 </template>
