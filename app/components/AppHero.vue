@@ -6,35 +6,38 @@ const current = experience.find((e) => e.end === null);
 </script>
 
 <template>
-  <AppSection class="hero" aria-labelledby="hero-title">
-    <h1 id="hero-title" class="headline">{{ basics.headline }}</h1>
-    <p class="summary">{{ basics.summary }}</p>
+  <AppSection aria-labelledby="hero-title">
+    <div class="hero">
+      <h1 id="hero-title" class="headline">{{ basics.headline }}</h1>
+      <p class="summary">{{ basics.summary }}</p>
 
-    <ul class="meta">
-      <li>{{ basics.location }}</li>
-      <li v-if="current">
-        {{ current.employmentType === "freelance" ? "Freelance" : "Currently" }} at
-        <span class="strong">{{ current.company }}</span>
-      </li>
-    </ul>
+      <ul class="meta">
+        <li>{{ basics.location }}</li>
+        <li v-if="current">
+          {{ current.employmentType === "freelance" ? "Freelance" : "Currently" }} at
+          <span class="strong">{{ current.company }}</span>
+        </li>
+      </ul>
 
-    <ul class="certs" aria-label="Certifications">
-      <li v-for="cert in certifications" :key="cert.id">
-        <a class="cert" :href="cert.url" :title="cert.name" target="_blank" rel="noopener">
-          <!-- ids are the official exam codes (cka, az-900…) -->
-          {{ cert.id.toUpperCase() }}
-        </a>
-      </li>
-    </ul>
+      <ul class="certs" aria-label="Certifications">
+        <li v-for="cert in certifications" :key="cert.id">
+          <a class="cert" :href="cert.url" :title="cert.name" target="_blank" rel="noopener">
+            <!-- ids are the official exam codes (cka, az-900…) -->
+            {{ cert.id.toUpperCase() }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </AppSection>
 </template>
 
 <style scoped>
+/* Adds to AppSection padding (multi-root, so its class can't be styled from here). */
 .hero {
-  padding-block: 96px 64px;
+  padding-block: 64px 32px;
 
   @media (max-width: 1024px) {
-    padding-block: 56px 40px;
+    padding-block: 32px 16px;
   }
 }
 
