@@ -1,8 +1,8 @@
 {
   "paper": "Letter",
-  "headline": "DevOps Engineer",
+  "headline": "DevSecOps Engineer",
   "location": "Brussels",
-  "summary": "Over the past 2 years, I’ve specialized in DevOps engineering, building robust CI/CD pipelines (GitLab, ArgoCD) and leading infrastructure migrations to containerized and virtualized platforms (Kubernetes, Proxmox). Passionate about automation, security, and delivering scalable solutions that empower development teams. Versatile software operator with 5 years of experience in system administration across Windows and Linux environments and development (TypeScript, C#, Python, Elixir).",
+  "summary": "Over the past 3 years, I’ve specialized in DevSecOps engineering, building robust CI/CD pipelines (GitLab, ArgoCD) and leading infrastructure migrations to containerized and virtualized platforms (Kubernetes, Proxmox). Passionate about automation, security, and delivering scalable solutions that empower development teams. Versatile software operator with 5 years of experience in system administration across Windows and Linux environments and development (TypeScript, C#, Python, Elixir).",
   "skills": [
     { "id": "linux-server", "label": "Linux server" },
     { "id": "windows-server", "label": "Windows server" },
