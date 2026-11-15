@@ -2,4 +2,5 @@
   <AppHero />
   <AppAbout />
   <AppExperience />
+  <AppCertifications />
 </template>

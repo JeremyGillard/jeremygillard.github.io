@@ -1,4 +1,5 @@
 import type { Experience, YearMonth } from "../types/profile";
+import { formatMonth } from "./date";
 
 export interface CompanyGroup {
   company: string;
@@ -22,17 +23,9 @@ export function groupByCompany(list: Experience[]): CompanyGroup[] {
   return groups;
 }
 
-const monthFormat = new Intl.DateTimeFormat("en", { month: "short", year: "numeric" });
-
-function toDate(ym: YearMonth): Date {
-  const [y, m] = ym.split("-").map(Number);
-  return new Date(Date.UTC(y!, m! - 1));
-}
-
 /** "Dec 2023 – Mar 2025", or "Jun 2026 – Present". */
 export function formatPeriod(start: YearMonth, end: YearMonth | null): string {
-  const fmt = (ym: YearMonth) => monthFormat.format(toDate(ym));
-  return `${fmt(start)} – ${end ? fmt(end) : "Present"}`;
+  return `${formatMonth(start)} – ${end ? formatMonth(end) : "Present"}`;
 }
 
 /** Inclusive month count as "1 yr 4 mos". Null for ongoing roles (avoids build-time "now"). */
