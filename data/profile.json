@@ -37,7 +37,7 @@
         }
       ]
     },
-    "closing": "If my profile interests you, feel free to reach out here on LinkedIn. I'll be happy to share experiences about all this topics with you."
+    "closing": "If my profile interests you, feel free to reach out on LinkedIn. I'll be happy to share experiences about all this topics with you."
   },
   "skills": [
     { "id": "typescript", "name": "TypeScript", "category": "language" },
