@@ -30,6 +30,8 @@ export interface Link {
 export interface Basics {
   name: string;
   headline: string;
+  /** One-sentence pitch shown in the hero. */
+  summary: string;
   location: string;
   links: Link[];
 }

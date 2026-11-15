@@ -2,6 +2,7 @@
   "basics": {
     "name": "Jeremy Gillard",
     "headline": "DevSecOps Engineer",
+    "summary": "I build and secure infrastructure, from on-prem networks to Kubernetes and CI/CD.",
     "location": "Belgium",
     "links": [
       { "label": "GitHub", "url": "https://github.com/JeremyGillard" },
