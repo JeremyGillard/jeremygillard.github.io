@@ -68,6 +68,12 @@ const icons: Record<string, string> = {
 
 .nav-link {
   margin-right: 12px;
+
+  /* Desktop/tablet only (same 768px breakpoint as the frame borders). */
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text);
