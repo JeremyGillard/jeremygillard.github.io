@@ -20,6 +20,8 @@ export interface Skill {
   id: string;
   name: string;
   category: SkillCategory;
+  /** Other names recruiters may search for ("k8s", "js"…). */
+  aliases?: string[];
 }
 
 export interface Link {
@@ -62,11 +64,21 @@ export interface Experience {
   skills: string[];
 }
 
+export interface Education {
+  id: string;
+  school: string;
+  start: YearMonth;
+  end: YearMonth;
+  detail?: string;
+}
+
+/** Earned certifications have `issued`; ones being prepared have `inProgress` and no date. */
 export interface Certification {
   id: string;
   name: string;
   issuer: string;
-  issued: YearMonth;
+  issued?: YearMonth;
+  inProgress?: true;
   expires?: YearMonth;
   credentialId?: string;
   url?: string;
@@ -80,4 +92,5 @@ export interface Profile {
   skills: Skill[];
   experience: Experience[];
   certifications: Certification[];
+  education: Education[];
 }

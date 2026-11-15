@@ -40,8 +40,13 @@
     "closing": "If my profile interests you, feel free to reach out on LinkedIn. I'll be happy to share experiences about all this topics with you."
   },
   "skills": [
-    { "id": "typescript", "name": "TypeScript", "category": "language" },
-    { "id": "javascript", "name": "JavaScript", "category": "language" },
+    { "id": "typescript", "name": "TypeScript", "category": "language", "aliases": ["ts"] },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "language",
+      "aliases": ["js", "ecmascript"]
+    },
     { "id": "python", "name": "Python", "category": "language" },
     { "id": "csharp", "name": "C#", "category": "language" },
     { "id": "elixir", "name": "Elixir", "category": "language" },
@@ -53,9 +58,14 @@
     { "id": "html", "name": "HTML", "category": "language" },
     { "id": "css", "name": "CSS", "category": "language" },
 
-    { "id": "nodejs", "name": "Node.js", "category": "framework" },
+    { "id": "nodejs", "name": "Node.js", "category": "framework", "aliases": ["node"] },
     { "id": "phoenix", "name": "Phoenix", "category": "framework" },
-    { "id": "dotnet-core", "name": ".NET Core", "category": "framework" },
+    {
+      "id": "dotnet-core",
+      "name": ".NET Core",
+      "category": "framework",
+      "aliases": [".net", "dotnet"]
+    },
     { "id": "joomla", "name": "Joomla", "category": "framework" },
 
     { "id": "pytorch", "name": "PyTorch", "category": "library" },
@@ -67,13 +77,23 @@
     { "id": "skimage", "name": "Skimage", "category": "library" },
     { "id": "pydicom", "name": "Pydicom", "category": "library" },
 
-    { "id": "kubernetes", "name": "Kubernetes", "category": "devops" },
-    { "id": "helm", "name": "Helm", "category": "devops" },
-    { "id": "argocd", "name": "ArgoCD", "category": "devops" },
-    { "id": "docker", "name": "Docker", "category": "devops" },
+    { "id": "kubernetes", "name": "Kubernetes", "category": "devops", "aliases": ["k8s"] },
+    { "id": "helm", "name": "Helm", "category": "devops", "aliases": ["helm charts"] },
+    { "id": "argocd", "name": "ArgoCD", "category": "devops", "aliases": ["argo cd", "gitops"] },
+    { "id": "docker", "name": "Docker", "category": "devops", "aliases": ["containers"] },
     { "id": "podman", "name": "Podman", "category": "devops" },
-    { "id": "ansible", "name": "Ansible", "category": "devops" },
-    { "id": "terraform", "name": "Terraform", "category": "devops" },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "category": "devops",
+      "aliases": ["configuration management"]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "devops",
+      "aliases": ["iac", "infrastructure as code"]
+    },
     { "id": "gitlab", "name": "GitLab", "category": "devops" },
     { "id": "github", "name": "GitHub", "category": "devops" },
     { "id": "jenkins", "name": "Jenkins", "category": "devops" },
@@ -81,17 +101,38 @@
     { "id": "git", "name": "Git", "category": "devops" },
     { "id": "rabbitmq", "name": "RabbitMQ", "category": "devops" },
 
-    { "id": "gcp", "name": "Google Cloud Platform (GCP)", "category": "cloud" },
+    {
+      "id": "gcp",
+      "name": "Google Cloud Platform (GCP)",
+      "category": "cloud",
+      "aliases": ["google cloud"]
+    },
     { "id": "gke", "name": "Google Kubernetes Engine (GKE)", "category": "cloud" },
-    { "id": "azure", "name": "Microsoft Azure", "category": "cloud" },
+    { "id": "azure", "name": "Microsoft Azure", "category": "cloud", "aliases": ["az"] },
 
     { "id": "prometheus", "name": "Prometheus", "category": "observability" },
     { "id": "alertmanager", "name": "AlertManager", "category": "observability" },
     { "id": "grafana", "name": "Grafana", "category": "observability" },
-    { "id": "grafana-loki", "name": "Grafana Loki", "category": "observability" },
-    { "id": "elk", "name": "Elastic Stack (ELK)", "category": "observability" },
+    {
+      "id": "grafana-loki",
+      "name": "Grafana Loki",
+      "category": "observability",
+      "aliases": ["loki"]
+    },
+    {
+      "id": "elk",
+      "name": "Elastic Stack (ELK)",
+      "category": "observability",
+      "aliases": ["elasticsearch", "kibana", "logstash"]
+    },
     { "id": "zabbix", "name": "Zabbix", "category": "observability" },
     { "id": "prtg", "name": "Paessler PRTG", "category": "observability" },
+    {
+      "id": "lgtm-stack",
+      "name": "LGTM Stack",
+      "category": "observability",
+      "aliases": ["grafana stack"]
+    },
 
     { "id": "keycloak", "name": "Keycloak", "category": "security" },
     { "id": "oauth", "name": "OAuth", "category": "security" },
@@ -104,6 +145,15 @@
     { "id": "firewall", "name": "Firewall", "category": "security" },
     { "id": "dkim", "name": "DKIM", "category": "security" },
     { "id": "dmarc", "name": "DMARC", "category": "security" },
+    {
+      "id": "entra-id",
+      "name": "Entra ID",
+      "category": "security",
+      "aliases": ["azure ad", "aad"]
+    },
+    { "id": "owasp", "name": "OWASP", "category": "security" },
+    { "id": "nis2", "name": "NIS2", "category": "security" },
+    { "id": "sast", "name": "SAST", "category": "security", "aliases": ["static analysis"] },
 
     { "id": "vlan", "name": "VLAN", "category": "network" },
     { "id": "switch", "name": "Switch", "category": "network" },
@@ -113,11 +163,27 @@
     { "id": "radius", "name": "Radius", "category": "network" },
     { "id": "wpa2-enterprise", "name": "WPA2 Enterprise", "category": "network" },
     { "id": "wpa3", "name": "WPA3", "category": "network" },
+    {
+      "id": "network-management",
+      "name": "Network Management",
+      "category": "network",
+      "aliases": ["networking"]
+    },
 
-    { "id": "linux-server", "name": "Linux Server", "category": "systems" },
+    { "id": "linux-server", "name": "Linux Server", "category": "systems", "aliases": ["linux"] },
     { "id": "linux-sysadmin", "name": "Linux System Administration", "category": "systems" },
-    { "id": "windows-server", "name": "Windows Server", "category": "systems" },
-    { "id": "active-directory", "name": "Active Directory", "category": "systems" },
+    {
+      "id": "windows-server",
+      "name": "Windows Server",
+      "category": "systems",
+      "aliases": ["windows"]
+    },
+    {
+      "id": "active-directory",
+      "name": "Active Directory",
+      "category": "systems",
+      "aliases": ["ad", "ad ds"]
+    },
     { "id": "exchange", "name": "Microsoft Exchange", "category": "systems" },
     { "id": "hyper-v", "name": "Hyper-V", "category": "systems" },
     { "id": "proxmox", "name": "Proxmox", "category": "systems" },
@@ -127,7 +193,7 @@
     { "id": "apache", "name": "Apache", "category": "systems" },
     { "id": "web-server", "name": "Web Server", "category": "systems" },
 
-    { "id": "postgresql", "name": "PostgreSQL", "category": "database" },
+    { "id": "postgresql", "name": "PostgreSQL", "category": "database", "aliases": ["postgres"] },
     { "id": "postgrest", "name": "PostgREST", "category": "database" },
     { "id": "mysql", "name": "MySQL", "category": "database" },
     { "id": "mariadb", "name": "MariaDB", "category": "database" },
@@ -144,7 +210,18 @@
     { "id": "algorithms", "name": "Algorithms", "category": "practice" },
     { "id": "automation", "name": "Automation", "category": "practice" },
     { "id": "data-science", "name": "Data Science", "category": "practice" },
-    { "id": "computer-vision", "name": "Computer Vision", "category": "practice" }
+    { "id": "computer-vision", "name": "Computer Vision", "category": "practice" },
+    {
+      "id": "cicd",
+      "name": "CI/CD",
+      "category": "practice",
+      "aliases": [
+        "continuous integration",
+        "continuous delivery",
+        "continuous deployment",
+        "pipelines"
+      ]
+    }
   ],
   "experience": [
     {
@@ -192,6 +269,7 @@
         "docker",
         "ansible",
         "terraform",
+        "cicd",
         "gitlab",
         "github",
         "jenkins",
@@ -359,6 +437,29 @@
       "credentialId": "A0BC9CED1B67AB1",
       "url": "https://learn.microsoft.com/api/credentials/share/en-us/JeremyGillard-9778/A0BC9CED1B67AB1",
       "skills": ["azure"]
+    },
+    {
+      "id": "cks",
+      "name": "CKS: Certified Kubernetes Security Specialist",
+      "issuer": "The Linux Foundation",
+      "inProgress": true,
+      "skills": ["kubernetes"]
+    },
+    {
+      "id": "az-104",
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "issuer": "Microsoft",
+      "inProgress": true,
+      "skills": ["azure"]
+    }
+  ],
+  "education": [
+    {
+      "id": "he2b-esi",
+      "school": "HE2B ESI Brussels",
+      "start": "2017-09",
+      "end": "2021-01",
+      "detail": "avg. score 15.5/20"
     }
   ]
 }

@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const { profile } = useProfile();
 const { dims } = useSkillSelection();
-const certifications = profile.certifications.toSorted((a, b) => b.issued.localeCompare(a.issued));
+/** Earned (newest first), then in progress. */
+const certifications = profile.certifications.toSorted((a, b) =>
+  (b.issued ?? "").localeCompare(a.issued ?? ""),
+);
 
 /** "CKA: Certified Kubernetes Administrator" → "Certified Kubernetes Administrator"; the code is shown separately. */
 const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
@@ -15,7 +18,7 @@ const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
         :id="`cert-${cert.id}`"
         :key="cert.id"
         class="item"
-        :class="{ dimmed: dims(cert.skills) }"
+        :class="{ dimmed: dims(cert.skills), planned: cert.inProgress }"
       >
         <component
           :is="cert.url ? 'a' : 'div'"
@@ -31,7 +34,8 @@ const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
             <span class="issuer">{{ cert.issuer }}</span>
           </span>
           <span class="dates">
-            <time :datetime="cert.issued">{{ formatMonth(cert.issued) }}</time>
+            <time v-if="cert.issued" :datetime="cert.issued">{{ formatMonth(cert.issued) }}</time>
+            <span v-else class="badge">In progress</span>
             <span v-if="cert.expires" class="expires">
               Valid until <time :datetime="cert.expires">{{ formatMonth(cert.expires) }}</time>
             </span>
@@ -68,6 +72,19 @@ const title = (name: string) => name.replace(/^[A-Z0-9-]+:\s*/, "");
 
 .dimmed {
   opacity: 0.35;
+}
+
+/* In progress: same row, quieter code + name. */
+.planned .code,
+.planned .name {
+  color: var(--text);
+}
+
+.badge {
+  padding: 1px 8px;
+  border: 1px dashed var(--border);
+  border-radius: 999px;
+  font-size: 0.75rem;
 }
 
 .cert {

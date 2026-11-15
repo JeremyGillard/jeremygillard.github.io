@@ -15,6 +15,7 @@ describe("data/profile.json", () => {
     expect(duplicates(profile.skills.map((s) => s.id))).toEqual([]);
     expect(duplicates(profile.experience.map((e) => e.id))).toEqual([]);
     expect(duplicates(profile.certifications.map((c) => c.id))).toEqual([]);
+    expect(duplicates(profile.education.map((e) => e.id))).toEqual([]);
   });
 
   it("references only existing skills", () => {
@@ -34,8 +35,30 @@ describe("data/profile.json", () => {
       }
     }
     for (const c of profile.certifications) {
-      expect(c.issued, c.id).toMatch(yearMonth);
+      if (c.issued) expect(c.issued, c.id).toMatch(yearMonth);
       if (c.expires) expect(c.expires, c.id).toMatch(yearMonth);
     }
+    for (const e of profile.education) {
+      expect(e.start, e.id).toMatch(yearMonth);
+      expect(e.end, e.id).toMatch(yearMonth);
+      expect(e.start <= e.end, e.id).toBe(true);
+    }
+  });
+
+  it("marks each certification as either earned or in progress", () => {
+    const bad = profile.certifications.filter((c) => Boolean(c.issued) === Boolean(c.inProgress));
+    expect(bad.map((c) => c.id)).toEqual([]);
+  });
+
+  it("uses aliases that don't collide across skills", () => {
+    const terms = profile.skills.flatMap((s) =>
+      [s.id, s.name, ...(s.aliases ?? [])].map((t) => `${t.toLowerCase()}|${s.id}`),
+    );
+    const owners = new Map<string, Set<string>>();
+    for (const t of terms) {
+      const [term, id] = t.split("|") as [string, string];
+      owners.set(term, (owners.get(term) ?? new Set()).add(id));
+    }
+    expect([...owners].filter(([, ids]) => ids.size > 1).map(([term]) => term)).toEqual([]);
   });
 });

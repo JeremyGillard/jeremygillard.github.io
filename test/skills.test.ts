@@ -10,7 +10,7 @@ describe("skillUsage", () => {
     const usage = skillUsage(profile);
     const k8s = usage.get("kubernetes")!;
     expect(k8s.experience.map((e) => e.id)).toEqual(["enspirit-fulltime"]);
-    expect(k8s.certifications.map((c) => c.id)).toEqual(["cka", "ckad", "kcsa", "kcna"]);
+    expect(k8s.certifications.map((c) => c.id)).toEqual(["cka", "ckad", "kcsa", "kcna", "cks"]);
     expect(usage.get("docker")!.experience.map((e) => e.id)).toEqual([
       "enspirit-freelance",
       "enspirit-fulltime",

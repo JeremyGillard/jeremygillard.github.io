@@ -3,6 +3,7 @@ const { profile } = useProfile();
 const { basics, experience, certifications } = profile;
 
 const current = experience.find((e) => e.end === null);
+const earned = certifications.filter((c) => c.issued);
 </script>
 
 <template>
@@ -20,7 +21,7 @@ const current = experience.find((e) => e.end === null);
       </ul>
 
       <ul class="certs" aria-label="Certifications">
-        <li v-for="cert in certifications" :key="cert.id">
+        <li v-for="cert in earned" :key="cert.id">
           <a class="cert" :href="`#cert-${cert.id}`" :title="cert.name">
             <!-- ids are the official exam codes (cka, az-900…) -->
             {{ cert.id.toUpperCase() }}
