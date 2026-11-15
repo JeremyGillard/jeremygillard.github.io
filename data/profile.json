@@ -40,12 +40,11 @@
     "closing": "If my profile interests you, feel free to reach out on LinkedIn. I'll be happy to share experiences about all this topics with you."
   },
   "skills": [
-    { "id": "typescript", "name": "TypeScript", "category": "language", "aliases": ["ts"] },
     {
-      "id": "javascript",
-      "name": "JavaScript",
+      "id": "typescript",
+      "name": "TypeScript",
       "category": "language",
-      "aliases": ["js", "ecmascript"]
+      "aliases": ["ts", "javascript", "js", "ecmascript"]
     },
     { "id": "python", "name": "Python", "category": "language" },
     { "id": "csharp", "name": "C#", "category": "language" },
@@ -209,9 +208,7 @@
     { "id": "vite-plus", "name": "Vite+", "category": "tool", "aliases": ["viteplus", "vite"] },
     { "id": "jira", "name": "JIRA", "category": "tool" },
 
-    { "id": "software-development", "name": "Software Development", "category": "practice" },
     { "id": "oop", "name": "Object-Oriented Programming (OOP)", "category": "practice" },
-    { "id": "algorithms", "name": "Algorithms", "category": "practice" },
     { "id": "automation", "name": "Automation", "category": "practice" },
     { "id": "data-science", "name": "Data Science", "category": "practice" },
     { "id": "computer-vision", "name": "Computer Vision", "category": "practice" },
@@ -305,7 +302,17 @@
         "typescript",
         "nodejs",
         "elixir",
-        "claude-code"
+        "claude-code",
+        "phoenix",
+        "podman",
+        "elk",
+        "lgtm-stack",
+        "nis2",
+        "sast",
+        "owasp",
+        "network-management",
+        "mongodb",
+        "nosql"
       ]
     },
     {
@@ -345,7 +352,11 @@
         "vpn",
         "dhcp",
         "wpa2-enterprise",
-        "wpa3"
+        "wpa3",
+        "bitbucket",
+        "elk",
+        "network-management",
+        "jira"
       ]
     },
     {
@@ -392,7 +403,9 @@
         "scipy",
         "numpy",
         "matplotlib",
-        "scikit-learn"
+        "scikit-learn",
+        "data-science",
+        "computer-vision"
       ]
     }
   ],
