@@ -238,7 +238,32 @@
         "Maintained and managed the company's internal IT equipment, with a focus on cybersecurity.",
         "Developed a software (C#, .NET 6, PowerShell) to regularly monitor the status of the company's servers backups by interfacing the native PowerShell module provided by Windows Server Backup, using WS-Management protocol, and creating a weekly html email table with the help of razor template builder."
       ],
-      "skills": []
+      "skills": [
+        "csharp",
+        "dotnet-core",
+        "powershell",
+        "bash",
+        "sql",
+        "automation",
+        "hyper-v",
+        "exchange",
+        "synology",
+        "backups-management",
+        "linux-sysadmin",
+        "apache",
+        "web-server",
+        "mysql",
+        "mariadb",
+        "prtg",
+        "eset",
+        "nessus",
+        "dkim",
+        "dmarc",
+        "vpn",
+        "dhcp",
+        "wpa2-enterprise",
+        "wpa3"
+      ]
     },
     {
       "id": "uclouvain-coactions",
