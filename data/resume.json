@@ -1,0 +1,90 @@
+{
+  "paper": "Letter",
+  "headline": "DevOps Engineer",
+  "location": "Brussels",
+  "summary": "Over the past 2 years, I’ve specialized in DevOps engineering, building robust CI/CD pipelines (GitLab, ArgoCD) and leading infrastructure migrations to containerized and virtualized platforms (Kubernetes, Proxmox). Passionate about automation, security, and delivering scalable solutions that empower development teams. Versatile software operator with 5 years of experience in system administration across Windows and Linux environments and development (TypeScript, C#, Python, Elixir).",
+  "skills": [
+    { "id": "linux-server", "label": "Linux server" },
+    { "id": "windows-server", "label": "Windows server" },
+    "proxmox",
+    "hyper-v",
+    "gitlab",
+    "github",
+    "postgresql",
+    "docker",
+    "git",
+    { "id": "azure", "label": "Azure" },
+    "entra-id",
+    "kubernetes",
+    "helm",
+    "argocd",
+    "lgtm-stack",
+    "prometheus",
+    "terraform",
+    "ansible",
+    { "id": "typescript", "label": "Typescript/Javascript (Node.js, Vue.js)" },
+    "python",
+    { "id": "csharp", "label": "C# (.NET Core 8, REST Api)" },
+    { "id": "active-directory", "label": "Active Directory (DS, CS, FS)" },
+    "pki",
+    "radius",
+    "oauth2-1",
+    "mariadb",
+    "mongodb",
+    "owasp",
+    "nis2",
+    "sast",
+    "vlan",
+    "firewall",
+    "network-management",
+    { "id": "wpa2-enterprise", "label": "WPA2" },
+    "wpa3"
+  ],
+  "experience": [
+    {
+      "roles": ["enspirit-fulltime", "enspirit-freelance"],
+      "company": "Enspirit",
+      "city": "Brussels",
+      "workplace": "Full Remote",
+      "bullets": [
+        "Managed the migration of services from a bare metal to a virtualized and containerized infrastructure, and set up security systems (IAM system with Active Directory, WiFi WPA2 & 3 Enterprise, VLANs, Backups, DRP, NIS2).",
+        "Migrated (from Jenkins) and started from scratch GitLab CI/CD pipeline systems with a self-hosted runner for multi-containers monorepo projects to help developers have important information about their test suites (unit, integration, e2e) as well as automatic deployment.",
+        "Implemented a rest api scraper in Typescript/Node.js to collect and monitor information from several electronic equipment suppliers and developed a web interface on top of it in Elixir/Phoenix."
+      ]
+    },
+    {
+      "roles": ["ngroup-sysadmin"],
+      "company": "NGroup",
+      "city": "Brussels",
+      "title": "System Administrator",
+      "workplace": "On Site",
+      "bullets": [
+        "Maintained and managed the company's internal IT equipment, with a focus on cybersecurity (Active Directory DS, CS, DNS, Radius, VLANs, Windows Server, ESET Protect, Backups Management, Exchange, DKIM, DMARC, PKI).",
+        "Developed a software (C#, .NET 6, PowerShell) to monitor the status of the company's servers backups by interfacing a native PowerShell module provided by Windows Server and creating a weekly html email table with the help of razor template builder."
+      ]
+    },
+    {
+      "roles": ["iut-cobra"],
+      "company": "IUT",
+      "city": "Lille",
+      "workplace": "On Site",
+      "bullets": ["Developed MRI image processing pipelines with python and its libraries."]
+    },
+    {
+      "roles": ["uclouvain-coactions"],
+      "company": "UCLouvain",
+      "city": "Brussels",
+      "workplace": "Hybrid",
+      "note": "Student job",
+      "bullets": [
+        "Maintained the CoActions Lab website.",
+        "Developed an R library to facilitate the graphical representation of somatotopy data."
+      ]
+    }
+  ],
+  "education": ["he2b-esi"],
+  "certifications": [
+    { "ids": ["az-900", "az-104"], "label": "Azure Fundamentals" },
+    { "ids": ["kcna", "kcsa", "ckad", "cka", "cks"], "label": "Kubernetes" }
+  ]
+}

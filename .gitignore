@@ -28,3 +28,7 @@ logs
 
 # Reference scaffold (not part of the site)
 sample/
+
+# Resume: private contact details and generated PDFs
+data/private.json
+out/

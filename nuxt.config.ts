@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     families: [
       { name: "Michroma", provider: "google", weights: [400], global: true },
       { name: "Inter", provider: "google", weights: [400, 500, 600], global: true },
+      // Resume page only (matches the original Google Docs PDF).
+      { name: "Roboto", provider: "google", weights: [400, 700], styles: ["normal", "italic"] },
     ],
   },
 });

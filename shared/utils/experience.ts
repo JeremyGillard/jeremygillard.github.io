@@ -28,17 +28,25 @@ export function formatPeriod(start: YearMonth, end: YearMonth | null): string {
   return `${formatMonth(start)} – ${end ? formatMonth(end) : "Present"}`;
 }
 
-/** Inclusive month count as "1 yr 4 mos". Null for ongoing roles (avoids build-time "now"). */
-export function formatDuration(start: YearMonth, end: YearMonth | null): string | null {
-  if (!end) return null;
+/**
+ * Inclusive month count: "1 yr 4 mos" (short) or "1 year 4 months" (long).
+ * Ongoing roles return null unless `now` is given (the site avoids a build-time "now").
+ */
+export function formatDuration(
+  start: YearMonth,
+  end: YearMonth | null,
+  { style = "short", now }: { style?: "short" | "long"; now?: YearMonth } = {},
+): string | null {
+  const last = end ?? now;
+  if (!last) return null;
   const [sy, sm] = start.split("-").map(Number);
-  const [ey, em] = end.split("-").map(Number);
+  const [ey, em] = last.split("-").map(Number);
   const months = (ey! - sy!) * 12 + (em! - sm!) + 1;
   const y = Math.floor(months / 12);
   const m = months % 12;
-  return [y && `${y} yr${y > 1 ? "s" : ""}`, m && `${m} mo${m > 1 ? "s" : ""}`]
-    .filter(Boolean)
-    .join(" ");
+  const unit = (n: number, s: string, l: string) =>
+    style === "long" ? `${n} ${l}${n > 1 ? "s" : ""}` : `${n} ${s}${n > 1 ? "s" : ""}`;
+  return [y && unit(y, "yr", "year"), m && unit(m, "mo", "month")].filter(Boolean).join(" ");
 }
 
 /** Splits text into plain and URL parts so links render without v-html. */
