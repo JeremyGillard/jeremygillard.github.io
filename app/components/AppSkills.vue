@@ -30,6 +30,11 @@ const groups = computed(() => {
     .filter((g) => g.skills.length > 0);
 });
 
+/* Selected from elsewhere (Experience badge) while filtered out: drop the filter so its chip shows. */
+watch(selected, (id) => {
+  if (id && !groups.value.some((g) => g.skills.some((s) => s.id === id))) query.value = "";
+});
+
 /** Enter: open the usage panel of the best match. */
 function pickFirst() {
   const first = result.value.skills[0];
@@ -109,6 +114,7 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onKey));
       <ul class="chips">
         <li v-for="skill in group.skills" :key="skill.id">
           <button
+            :id="`skill-${skill.id}`"
             type="button"
             class="chip"
             :aria-pressed="selected === skill.id"

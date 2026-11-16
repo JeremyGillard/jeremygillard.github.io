@@ -7,13 +7,7 @@ const earned = certifications.filter((c) => c.issued);
 
 /** Jump to the skills search and focus it; the plain #hash stays as no-JS fallback. */
 function toSearch(e: MouseEvent) {
-  const el = document.getElementById("skills-search");
-  if (!el) return;
-  e.preventDefault();
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
-  el.focus({ preventScroll: true });
-  history.replaceState(null, "", "#skills-search");
+  if (focusInView("skills-search")) e.preventDefault();
 }
 </script>
 

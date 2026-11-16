@@ -3,7 +3,7 @@ import type { EmploymentType, Experience, Workplace } from "#shared/types/profil
 
 const { profile, resolveSkills } = useProfile();
 const groups = groupByCompany(profile.experience);
-const { selected, dims } = useSkillSelection();
+const { selected, dims, reveal } = useSkillSelection();
 
 const VISIBLE_SKILLS = 8;
 const expanded = ref(new Set<string>());
@@ -79,13 +79,16 @@ const workplace: Record<Workplace, string> = {
               class="skills"
               :aria-label="`Skills used at ${group.company}`"
             >
-              <li
-                v-for="skill in visibleSkills(role)"
-                :key="skill.id"
-                class="chip"
-                :class="{ match: skill.id === selected }"
-              >
-                {{ skill.name }}
+              <li v-for="skill in visibleSkills(role)" :key="skill.id">
+                <a
+                  class="chip link"
+                  :class="{ match: skill.id === selected }"
+                  :href="`#skill-${skill.id}`"
+                  :title="`See where I used ${skill.name}`"
+                  @click="reveal(skill.id, $event)"
+                >
+                  {{ skill.name }}
+                </a>
               </li>
               <li v-if="role.skills.length > VISIBLE_SKILLS">
                 <button
@@ -255,18 +258,27 @@ ul {
   box-sizing: border-box;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .more {
   font: inherit;
   font-size: 0.75rem;
   background: none;
   cursor: pointer;
   color: var(--text-h);
+}
+
+.link,
+.more {
   transition:
     border-color 0.2s,
     background-color 0.2s,
     transform 0.1s ease-out;
 
   &:hover {
+    color: var(--text-h);
     border-color: var(--accent-border);
     background: var(--accent-bg);
   }

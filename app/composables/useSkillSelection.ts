@@ -11,5 +11,13 @@ export function useSkillSelection() {
   /** True when a skill is selected and `ids` doesn't include it. */
   const dims = (ids: string[] = []) => selected.value !== null && !ids.includes(selected.value);
 
-  return { selected, toggle, clear, dims };
+  /** Select `id` and jump to its chip in the Skills section. */
+  const reveal = async (id: string, e?: MouseEvent) => {
+    e?.preventDefault();
+    selected.value = id;
+    await nextTick(); // let the Skills section drop a search filter hiding the chip
+    focusInView(`skill-${id}`);
+  };
+
+  return { selected, toggle, clear, dims, reveal };
 }
