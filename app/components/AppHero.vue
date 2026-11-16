@@ -4,6 +4,17 @@ const { basics, experience, certifications } = profile;
 
 const current = experience.find((e) => e.end === null);
 const earned = certifications.filter((c) => c.issued);
+
+/** Jump to the skills search and focus it; the plain #hash stays as no-JS fallback. */
+function toSearch(e: MouseEvent) {
+  const el = document.getElementById("skills-search");
+  if (!el) return;
+  e.preventDefault();
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+  el.focus({ preventScroll: true });
+  history.replaceState(null, "", "#skills-search");
+}
 </script>
 
 <template>
@@ -28,6 +39,14 @@ const earned = certifications.filter((c) => c.issued);
           </a>
         </li>
       </ul>
+
+      <div class="actions">
+        <a class="action primary" href="#contact">Get in touch</a>
+        <a class="action" href="#skills-search" @click="toSearch">
+          Looking for a specific skill?
+          <kbd class="kbd" aria-hidden="true">/</kbd>
+        </a>
+      </div>
     </div>
   </AppSection>
 </template>
@@ -58,6 +77,78 @@ const earned = certifications.filter((c) => c.issued);
   line-height: 1.4;
   letter-spacing: -0.01em;
   text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 40px 0 0;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-h);
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    transform 0.1s ease-out;
+
+  &:hover {
+    border-color: var(--accent-border);
+    background: var(--accent-bg);
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  &.primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--bg);
+
+    &:hover {
+      background: var(--accent);
+      opacity: 0.9;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+.kbd {
+  min-width: 20px;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--text);
+
+  /* No keyboard shortcut on touch devices. */
+  @media (hover: none) {
+    display: none;
+  }
 }
 
 .meta {

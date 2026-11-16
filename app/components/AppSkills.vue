@@ -9,7 +9,7 @@ const current = computed(() => (selected.value ? usage.get(selected.value) : und
 /* Recruiter search: filters the chips and answers "do you have X?" directly. */
 const query = ref("");
 const input = useTemplateRef("input");
-const searchId = useId();
+const searchId = "skills-search"; // hero CTA targets it
 const result = computed(() => searchProfile(query.value, profile));
 const searching = computed(() => normalize(query.value) !== "");
 const earned = computed(() => result.value.certifications.filter((c) => c.issued));
