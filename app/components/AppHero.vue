@@ -120,7 +120,7 @@ function toSearch(e: MouseEvent) {
   &.primary {
     border-color: var(--accent);
     background: var(--accent);
-    color: var(--bg);
+    color: var(--accent-fg);
 
     &:hover {
       background: var(--accent);
