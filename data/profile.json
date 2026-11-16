@@ -432,7 +432,14 @@
       "name": "Valentine U",
       "description": "Website for the musician Valentine U: multilingual Nuxt site presenting the new EP, biography and visuals, with GSAP animations.",
       "url": "https://valentine.u.gils.studio",
-      "skills": ["nuxt", "gsap", "typescript", "html", "css"]
+      "skills": ["nuxt", "gsap", "typescript", "html", "css", "azure"]
+    },
+    {
+      "id": "francoise",
+      "name": "Françoise Dubois",
+      "description": "Website for the therapist Françoise Dubois: static Nuxt site presenting her practice and approach, hosted on Azure Static Web Apps.",
+      "url": "https://francoise.dubois.gils.studio",
+      "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "azure"]
     }
   ],
   "certifications": [
