@@ -5,8 +5,14 @@
     "summary": "I build and secure infrastructure, from on-prem networks to Kubernetes and CI/CD.",
     "location": "Belgium",
     "links": [
-      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jeremygillard" },
-      { "label": "GitHub", "url": "https://github.com/JeremyGillard" }
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jeremygillard"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JeremyGillard"
+      }
     ]
   },
   "about": {
@@ -46,46 +52,176 @@
       "category": "language",
       "aliases": ["ts", "javascript", "js", "ecmascript"]
     },
-    { "id": "python", "name": "Python", "category": "language" },
-    { "id": "csharp", "name": "C#", "category": "language" },
-    { "id": "elixir", "name": "Elixir", "category": "language" },
-    { "id": "cpp", "name": "C++", "category": "language" },
-    { "id": "r", "name": "R", "category": "language" },
-    { "id": "bash", "name": "Bash", "category": "language" },
-    { "id": "powershell", "name": "PowerShell", "category": "language" },
-    { "id": "sql", "name": "SQL", "category": "language" },
-    { "id": "html", "name": "HTML", "category": "language" },
-    { "id": "css", "name": "CSS", "category": "language" },
-    { "id": "rust", "name": "Rust", "category": "language" },
-    { "id": "webassembly", "name": "WebAssembly", "category": "language", "aliases": ["wasm"] },
-
-    { "id": "nodejs", "name": "Node.js", "category": "framework", "aliases": ["node"] },
-    { "id": "phoenix", "name": "Phoenix", "category": "framework" },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "language"
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "category": "language"
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "category": "language"
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "category": "language"
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "category": "language"
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "category": "language"
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "category": "language"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "language"
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "language"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "language"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "category": "language"
+    },
+    {
+      "id": "webassembly",
+      "name": "WebAssembly",
+      "category": "language",
+      "aliases": ["wasm"]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "framework",
+      "aliases": ["node"]
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "category": "framework"
+    },
     {
       "id": "dotnet-core",
       "name": ".NET Core",
       "category": "framework",
       "aliases": [".net", "dotnet"]
     },
-    { "id": "joomla", "name": "Joomla", "category": "framework" },
-    { "id": "nuxt", "name": "Nuxt", "category": "framework", "aliases": ["nuxt.js", "nuxtjs"] },
-    { "id": "vue", "name": "Vue.js", "category": "framework", "aliases": ["vuejs", "vue3"] },
-
-    { "id": "pytorch", "name": "PyTorch", "category": "library" },
-    { "id": "scikit-learn", "name": "Scikit-learn", "category": "library" },
-    { "id": "numpy", "name": "Numpy", "category": "library" },
-    { "id": "scipy", "name": "Scipy", "category": "library" },
-    { "id": "pandas", "name": "Pandas", "category": "library" },
-    { "id": "matplotlib", "name": "Matplotlib", "category": "library" },
-    { "id": "skimage", "name": "Skimage", "category": "library" },
-    { "id": "pydicom", "name": "Pydicom", "category": "library" },
-    { "id": "gsap", "name": "GSAP", "category": "library", "aliases": ["greensock"] },
-
-    { "id": "kubernetes", "name": "Kubernetes", "category": "devops", "aliases": ["k8s"] },
-    { "id": "helm", "name": "Helm", "category": "devops", "aliases": ["helm charts"] },
-    { "id": "argocd", "name": "ArgoCD", "category": "devops", "aliases": ["argo cd", "gitops"] },
-    { "id": "docker", "name": "Docker", "category": "devops", "aliases": ["containers"] },
-    { "id": "podman", "name": "Podman", "category": "devops" },
+    {
+      "id": "joomla",
+      "name": "Joomla",
+      "category": "framework"
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "category": "framework",
+      "aliases": ["nuxt.js", "nuxtjs"]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "framework",
+      "aliases": ["vuejs", "vue3"]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "library"
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-learn",
+      "category": "library"
+    },
+    {
+      "id": "numpy",
+      "name": "Numpy",
+      "category": "library"
+    },
+    {
+      "id": "scipy",
+      "name": "Scipy",
+      "category": "library"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "library"
+    },
+    {
+      "id": "matplotlib",
+      "name": "Matplotlib",
+      "category": "library"
+    },
+    {
+      "id": "skimage",
+      "name": "Skimage",
+      "category": "library"
+    },
+    {
+      "id": "pydicom",
+      "name": "Pydicom",
+      "category": "library"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "category": "library",
+      "aliases": ["greensock"]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "devops",
+      "aliases": ["k8s"]
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "category": "devops",
+      "aliases": ["helm charts"]
+    },
+    {
+      "id": "argocd",
+      "name": "ArgoCD",
+      "category": "devops",
+      "aliases": ["argo cd", "gitops"]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "aliases": ["containers"]
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "category": "devops"
+    },
     {
       "id": "ansible",
       "name": "Ansible",
@@ -98,25 +234,68 @@
       "category": "devops",
       "aliases": ["iac", "infrastructure as code"]
     },
-    { "id": "gitlab", "name": "GitLab", "category": "devops" },
-    { "id": "github", "name": "GitHub", "category": "devops" },
-    { "id": "jenkins", "name": "Jenkins", "category": "devops" },
-    { "id": "bitbucket", "name": "Bitbucket", "category": "devops" },
-    { "id": "git", "name": "Git", "category": "devops" },
-    { "id": "rabbitmq", "name": "RabbitMQ", "category": "devops" },
-
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "category": "devops"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "devops"
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "category": "devops"
+    },
+    {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "category": "devops"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops"
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "category": "devops"
+    },
     {
       "id": "gcp",
       "name": "Google Cloud Platform (GCP)",
       "category": "cloud",
       "aliases": ["google cloud"]
     },
-    { "id": "gke", "name": "Google Kubernetes Engine (GKE)", "category": "cloud" },
-    { "id": "azure", "name": "Microsoft Azure", "category": "cloud", "aliases": ["az"] },
-
-    { "id": "prometheus", "name": "Prometheus", "category": "observability" },
-    { "id": "alertmanager", "name": "AlertManager", "category": "observability" },
-    { "id": "grafana", "name": "Grafana", "category": "observability" },
+    {
+      "id": "gke",
+      "name": "Google Kubernetes Engine (GKE)",
+      "category": "cloud"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "category": "cloud",
+      "aliases": ["az"]
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "category": "observability"
+    },
+    {
+      "id": "alertmanager",
+      "name": "AlertManager",
+      "category": "observability"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "category": "observability"
+    },
     {
       "id": "grafana-loki",
       "name": "Grafana Loki",
@@ -129,52 +308,151 @@
       "category": "observability",
       "aliases": ["elasticsearch", "kibana", "logstash"]
     },
-    { "id": "zabbix", "name": "Zabbix", "category": "observability" },
-    { "id": "prtg", "name": "Paessler PRTG", "category": "observability" },
+    {
+      "id": "zabbix",
+      "name": "Zabbix",
+      "category": "observability"
+    },
+    {
+      "id": "prtg",
+      "name": "Paessler PRTG",
+      "category": "observability"
+    },
     {
       "id": "lgtm-stack",
       "name": "LGTM Stack",
       "category": "observability",
       "aliases": ["grafana stack"]
     },
-
-    { "id": "keycloak", "name": "Keycloak", "category": "security" },
-    { "id": "oauth", "name": "OAuth", "category": "security" },
-    { "id": "oidc", "name": "OIDC", "category": "security" },
-    { "id": "pki", "name": "PKI", "category": "security" },
-    { "id": "aikido", "name": "Aikido", "category": "security" },
-    { "id": "nessus", "name": "Nessus", "category": "security" },
-    { "id": "eset", "name": "ESET", "category": "security" },
-    { "id": "firewall", "name": "Firewall", "category": "security" },
-    { "id": "dkim", "name": "DKIM", "category": "security" },
-    { "id": "dmarc", "name": "DMARC", "category": "security" },
+    {
+      "id": "keycloak",
+      "name": "Keycloak",
+      "category": "security"
+    },
+    {
+      "id": "oauth",
+      "name": "OAuth",
+      "category": "security"
+    },
+    {
+      "id": "oidc",
+      "name": "OIDC",
+      "category": "security"
+    },
+    {
+      "id": "pki",
+      "name": "PKI",
+      "category": "security"
+    },
+    {
+      "id": "aikido",
+      "name": "Aikido",
+      "category": "security"
+    },
+    {
+      "id": "nessus",
+      "name": "Nessus",
+      "category": "security"
+    },
+    {
+      "id": "eset",
+      "name": "ESET",
+      "category": "security"
+    },
+    {
+      "id": "firewall",
+      "name": "Firewall",
+      "category": "security"
+    },
+    {
+      "id": "dkim",
+      "name": "DKIM",
+      "category": "security"
+    },
+    {
+      "id": "dmarc",
+      "name": "DMARC",
+      "category": "security"
+    },
     {
       "id": "entra-id",
       "name": "Entra ID",
       "category": "security",
       "aliases": ["azure ad", "aad"]
     },
-    { "id": "owasp", "name": "OWASP", "category": "security" },
-    { "id": "nis2", "name": "NIS2", "category": "security" },
-    { "id": "sast", "name": "SAST", "category": "security", "aliases": ["static analysis"] },
-
-    { "id": "vlan", "name": "VLAN", "category": "network" },
-    { "id": "switch", "name": "Switch", "category": "network" },
-    { "id": "dns", "name": "DNS", "category": "network" },
-    { "id": "dhcp", "name": "DHCP", "category": "network" },
-    { "id": "vpn", "name": "VPN", "category": "network" },
-    { "id": "radius", "name": "Radius", "category": "network" },
-    { "id": "wpa2-enterprise", "name": "WPA2 Enterprise", "category": "network" },
-    { "id": "wpa3", "name": "WPA3", "category": "network" },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "category": "security"
+    },
+    {
+      "id": "nis2",
+      "name": "NIS2",
+      "category": "security"
+    },
+    {
+      "id": "sast",
+      "name": "SAST",
+      "category": "security",
+      "aliases": ["static analysis"]
+    },
+    {
+      "id": "vlan",
+      "name": "VLAN",
+      "category": "network"
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "category": "network"
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "category": "network"
+    },
+    {
+      "id": "dhcp",
+      "name": "DHCP",
+      "category": "network"
+    },
+    {
+      "id": "vpn",
+      "name": "VPN",
+      "category": "network"
+    },
+    {
+      "id": "radius",
+      "name": "Radius",
+      "category": "network"
+    },
+    {
+      "id": "wpa2-enterprise",
+      "name": "WPA2 Enterprise",
+      "category": "network"
+    },
+    {
+      "id": "wpa3",
+      "name": "WPA3",
+      "category": "network"
+    },
     {
       "id": "network-management",
       "name": "Network Management",
       "category": "network",
       "aliases": ["networking"]
     },
-
-    { "id": "linux-server", "name": "Linux Server", "category": "systems", "aliases": ["linux"] },
-    { "id": "linux-sysadmin", "name": "Linux System Administration", "category": "systems" },
+    {
+      "id": "linux-server",
+      "name": "Linux Server",
+      "category": "systems",
+      "aliases": ["linux"]
+    },
+    {
+      "id": "linux-sysadmin",
+      "name": "Linux System Administration",
+      "category": "systems"
+    },
     {
       "id": "windows-server",
       "name": "Windows Server",
@@ -187,32 +465,123 @@
       "category": "systems",
       "aliases": ["ad", "ad ds"]
     },
-    { "id": "exchange", "name": "Microsoft Exchange", "category": "systems" },
-    { "id": "hyper-v", "name": "Hyper-V", "category": "systems" },
-    { "id": "proxmox", "name": "Proxmox", "category": "systems" },
-    { "id": "synology", "name": "Synology", "category": "systems" },
-    { "id": "backups-management", "name": "Backups Management", "category": "systems" },
-    { "id": "nginx", "name": "Nginx", "category": "systems" },
-    { "id": "apache", "name": "Apache", "category": "systems" },
-    { "id": "web-server", "name": "Web Server", "category": "systems" },
-
-    { "id": "postgresql", "name": "PostgreSQL", "category": "database", "aliases": ["postgres"] },
-    { "id": "postgrest", "name": "PostgREST", "category": "database" },
-    { "id": "mysql", "name": "MySQL", "category": "database" },
-    { "id": "mariadb", "name": "MariaDB", "category": "database" },
-    { "id": "mongodb", "name": "MongoDB", "category": "database" },
-    { "id": "nosql", "name": "NoSQL", "category": "database" },
-
-    { "id": "claude-code", "name": "Claude Code", "category": "tool" },
-    { "id": "jupyter", "name": "Jupyter Notebook", "category": "tool" },
-    { "id": "figma", "name": "Figma", "category": "tool" },
-    { "id": "vite-plus", "name": "Vite+", "category": "tool", "aliases": ["viteplus", "vite"] },
-    { "id": "jira", "name": "JIRA", "category": "tool" },
-
-    { "id": "oop", "name": "Object-Oriented Programming (OOP)", "category": "practice" },
-    { "id": "automation", "name": "Automation", "category": "practice" },
-    { "id": "data-science", "name": "Data Science", "category": "practice" },
-    { "id": "computer-vision", "name": "Computer Vision", "category": "practice" },
+    {
+      "id": "exchange",
+      "name": "Microsoft Exchange",
+      "category": "systems"
+    },
+    {
+      "id": "hyper-v",
+      "name": "Hyper-V",
+      "category": "systems"
+    },
+    {
+      "id": "proxmox",
+      "name": "Proxmox",
+      "category": "systems"
+    },
+    {
+      "id": "synology",
+      "name": "Synology",
+      "category": "systems"
+    },
+    {
+      "id": "backups-management",
+      "name": "Backups Management",
+      "category": "systems"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "category": "systems"
+    },
+    {
+      "id": "apache",
+      "name": "Apache",
+      "category": "systems"
+    },
+    {
+      "id": "web-server",
+      "name": "Web Server",
+      "category": "systems"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "database",
+      "aliases": ["postgres"]
+    },
+    {
+      "id": "postgrest",
+      "name": "PostgREST",
+      "category": "database"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "database"
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "category": "database"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database"
+    },
+    {
+      "id": "nosql",
+      "name": "NoSQL",
+      "category": "database"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "tool"
+    },
+    {
+      "id": "jupyter",
+      "name": "Jupyter Notebook",
+      "category": "tool"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "category": "tool"
+    },
+    {
+      "id": "vite-plus",
+      "name": "Vite+",
+      "category": "tool",
+      "aliases": ["viteplus", "vite"]
+    },
+    {
+      "id": "jira",
+      "name": "JIRA",
+      "category": "tool"
+    },
+    {
+      "id": "oop",
+      "name": "Object-Oriented Programming (OOP)",
+      "category": "practice"
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "category": "practice"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "practice"
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "category": "practice"
+    },
     {
       "id": "cicd",
       "name": "CI/CD",
@@ -417,7 +786,15 @@
       "description": "This site: Nuxt static site with skill search and a generated PDF resume, deployed to GitHub Pages via GitHub Actions.",
       "repo": "https://github.com/JeremyGillard/jeremygillard.github.io",
       "url": "https://jeremygillard.github.io",
-      "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "github", "git"]
+      "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "github"]
+    },
+    {
+      "id": "timely",
+      "name": "Timely",
+      "description": "Local-first time tracker: one-tap timesheets with weekly stats, encrypted at rest in the browser (AES-GCM in OPFS) and unlocked with a passkey, no account or server.",
+      "repo": "https://github.com/JeremyGillard/timely",
+      "url": "https://jeremygillard.github.io/timely/",
+      "skills": ["nuxt", "vite-plus", "typescript", "html", "css", "github"]
     },
     {
       "id": "fivetwist",
